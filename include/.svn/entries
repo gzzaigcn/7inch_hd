@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="15"
+   name=""
+   committed-date="2014-11-10T07:13:22.187831Z"
+   url="svn://192.168.1.217/hd_project/include"
+   last-author="lgq"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="15"/>
+<entry
+   committed-rev="2"
+   name="dm6437_psc.h"
+   text-time="2013-01-17T07:08:02.578125Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="3aa2e6b60d00aff049892ae0134ce3e7"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="dmjpge_tigem.h"
+   text-time="2010-03-18T03:12:04.000000Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="7cd048bd243e50691d44eef1323beeec"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="vpbe.h"
+   text-time="2014-11-10T07:17:18.687325Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="5a6ccfa8160c98a8a7a063d4dc7d0e47"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="12"
+   name="dm6437_edma3.h"
+   text-time="2014-09-30T04:51:15.537576Z"
+   committed-date="2014-10-08T15:26:57.811968Z"
+   checksum="e9095c44f39661da778121683ee0986c"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="electrode_image_lib.h"
+   text-time="2014-06-09T06:03:33.745099Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="fe53be589446765c1a2d3caaa0ff7db8"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="ov2710.h"
+   text-time="2014-09-05T07:40:30.159025Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="478fd40f5c50324745f5c5442186a741"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="coefs.h"
+   text-time="2014-06-11T01:32:36.558759Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="bc1eaf25eaf982da1b9424477166dec0"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="dm6437_vpbe.h"
+   text-time="2014-11-10T06:40:31.197064Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="c5fb359c024a847dea51682b486e8465"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="2"
+   name="dm6437_flash.h"
+   text-time="2013-01-21T03:27:27.531250Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="419b2f8566bb0edce27120acf793506b"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="dm6437_gpio.h"
+   text-time="2013-01-17T07:06:03.296875Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="ed621c5f4328d69acb76ab927d4deec2"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="comm_camera.h"
+   text-time="2014-10-22T04:52:07.237663Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="aee7e60d9ee78dd8660aeb816721f50e"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="9"
+   name="ov5640.h"
+   text-time="2014-09-05T08:24:12.860035Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="50f096ed5d28360b478694f7aea353c2"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="dm6437_vpfe.h"
+   text-time="2014-10-30T06:15:29.573176Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="e6a801af29d8a27bb3ce5f9930aadf5e"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="2"
+   name="image_alg.h"
+   text-time="2014-06-19T13:10:15.649825Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="5da77d53e2e0ba4db590855e281bb786"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="jpeg_alg.h"
+   text-time="2013-10-17T12:13:18.860263Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="3061ca40c9cb5dc28f2a3815cd8c5e4e"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="norflash.h"
+   text-time="2014-11-10T08:11:55.187731Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="014d65bdeb26a3af26591580098dda8d"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="2"
+   name="img_feature_lib.h"
+   text-time="2013-10-27T15:28:31.598033Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="b5691bfd2ac9cad8cb989df63e3a14de"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="dm6437_ddr.h"
+   text-time="2013-01-17T07:04:57.984375Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="3b6622f9db37275a517ab2c2ff410d29"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="idmjpge.h"
+   text-time="2013-10-17T07:20:57.354103Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="83af88a0f3493a0b2b94ed57aa646676"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="image_process.h"
+   text-time="2014-06-05T14:03:01.182518Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="beb14ee6f42bf40c8b6f563229f39c4d"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="osd_bmp_array.h"
+   text-time="2014-01-18T08:35:47.554930Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="15e12d975a66a523655a46e6e85b5049"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IQmath_inline.h"
+   text-time="2008-02-06T19:22:31.000000Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="a816c042b31e215bbc01e6fffcdd9daf"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="dm6437_i2c.h"
+   text-time="2013-01-17T07:06:44.750000Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="b61244ca74383bf07c75ca4b31b4abbe"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="buzzer.h"
+   text-time="2014-03-11T11:09:48.459699Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="b116302ee50ed855721420f7b652ec37"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="actuator.h"
+   text-time="2014-10-21T11:32:47.193925Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="c0aad2fe184446d30dd8df93f9932394"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="2"
+   name="ubl.h"
+   text-time="2013-01-18T09:25:30.304750Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="bcf71c79a856484e08275847c5ffafdd"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IQmath.h"
+   text-time="2013-10-24T14:12:54.142088Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="ccbbde6c3e7e32aa4fb0688cd48050da"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="dm6437.h"
+   text-time="2014-10-20T06:10:43.095931Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="e64a35582f4396e91a0738e289389d91"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="2"
+   name="Osd.h"
+   text-time="2013-10-08T11:32:19.229540Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="2dda930cb9b70e1b257e2bf67955d61e"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="11"
+   name="debug.h"
+   text-time="2014-09-14T06:15:48.577181Z"
+   committed-date="2014-09-23T15:57:10.850077Z"
+   checksum="73ce5c71f42d9dddb0bbf7c3b3522c57"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="xdm.h"
+   text-time="2011-03-25T13:19:36.000000Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="5399a8fbf32e45474d03ae69e0a78485"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="dm6437_eeprom.h"
+   text-time="2013-01-17T07:05:21.625000Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="67dde74d02b27766e02edd0381d5f459"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="dm6437_pll.h"
+   text-time="2013-01-17T07:07:50.781250Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="42196ad5893fe3e97cd6937d736a49bc"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="jpegdec_ti.h"
+   text-time="2013-10-17T07:18:05.513275Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="77a645a95dfafd46bdd592e681b0b7fa"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="img_alg.h"
+   text-time="2014-10-20T02:58:42.234471Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="a5797e8f10145b2019d3a9e343c78a69"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="global.h"
+   text-time="2014-10-20T02:32:11.466485Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="e0c4de17f594e0796db1cee7f7863fcb"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="2"
+   name="typedef.h"
+   text-time="2013-10-24T14:00:48.682594Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="df2c089910645ee9d0e5cee40cc75972"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="jpegdec.h"
+   text-time="2013-10-17T07:15:05.358971Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="fdfbe92f7def4f4411a9deb77fe0c806"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="lcd.h"
+   text-time="2014-11-10T07:18:00.258703Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="ef83b3ba80f940a42e9110e943ece316"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T07:17:18.846335Z"
+   revision="16"/>
+<entry
+   committed-rev="2"
+   name="implant.h"
+   text-time="2014-06-17T06:25:54.785588Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="eb465b13de8ba2e6022c7f7740f677fb"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="led.h"
+   text-time="2013-12-04T01:20:47.354040Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="84033adb8995cccbe2764b704be1a9ab"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="11"
+   name="norflash_fs.h"
+   text-time="2014-09-23T13:38:25.822789Z"
+   committed-date="2014-09-23T15:57:10.850077Z"
+   checksum="5925304bbf5a27d02998046673b9ffe0"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="11"
+   name="tmd2771.h"
+   text-time="2014-09-15T15:00:17.212649Z"
+   committed-date="2014-09-23T15:57:10.850077Z"
+   checksum="139dfe8fd837d1f4735e876ac6f159fb"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="dm6437_cache.h"
+   text-time="2013-08-31T11:44:47.636382Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="6b09f5908bc6184a48846b72ade46d80"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="11"
+   name="dm6437_mcbsp.h"
+   text-time="2014-09-23T13:22:24.263791Z"
+   committed-date="2014-09-23T15:57:10.850077Z"
+   checksum="e593541d55b2fbaf0407627c07ed298d"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="uart_process.h"
+   text-time="2014-06-17T02:47:05.378629Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="478cd1b00eb704f6264bd20b74b16a91"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="7"
+   name="sensor.h"
+   text-time="2014-09-03T13:01:19.770013Z"
+   committed-date="2014-09-03T15:45:10.093210Z"
+   checksum="b7449cf6d311d3345611b02219327999"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="realplay.h"
+   text-time="2014-10-20T03:00:42.104328Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="6751e9abbd5b17e576dc82722c9d9f9e"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="2"
+   name="ijpegdec.h"
+   text-time="2013-10-17T07:02:48.543827Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="d92ca8a0efd4ecf4acc66431c34b8686"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="dm6437_uart.h"
+   text-time="2013-08-25T16:41:43.251326Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="1a189bcd531fdb32b5442fd31240ef8d"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="iimgdec1.h"
+   text-time="2013-10-17T07:47:01.054542Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="abe502e896f070a8ffb0b2bb1d27f5eb"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="wv511.h"
+   text-time="2014-11-10T07:17:18.791331Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="4e8582ffd11cd77c01858f5ff0fa75d4"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="wireless_rf.h"
+   text-time="2014-02-14T07:20:22.523124Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="6cd911c4923ea36d98704dd0201ed04d"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="dm6437_cycles.h"
+   text-time="2011-12-01T04:39:02.265625Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="0ac8fe1d97dc722e0b34fc933f959bb2"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="target.h"
+   text-time="2013-07-29T11:40:46.934103Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="3c02c0006e162b96f3d96e08c62b325e"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="key.h"
+   text-time="2013-07-26T02:33:52.465051Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="7488b99acb0ec0a19da88f8d3ca09524"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="camera.h"
+   text-time="2014-10-22T04:52:26.901783Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="623d094d6e4497b884480cc621631c4a"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+</wc-entries>

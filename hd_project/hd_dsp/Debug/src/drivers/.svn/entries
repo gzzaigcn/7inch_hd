@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="7"
+   name=""
+   committed-date="2014-09-03T15:45:10.093210Z"
+   url="svn://192.168.1.217/hd_project/hd_project/hd_dsp/Debug/src/drivers"
+   last-author="gzz"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="8"/>
+<entry
+   committed-rev="16"
+   name="dm6437_cache.obj"
+   text-time="2014-10-22T13:14:50.865563Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="164c2b13e70ee74032c6abef94942b56"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.215600Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="lcd.pp"
+   text-time="2014-11-10T07:53:42.160213Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="0ec6a05bbda7e8b0a98711c4b4e3a0da"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="dm6437_mcbsp.obj"
+   text-time="2014-11-10T06:44:12.619729Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="4c277075f9657c038597c9c450c89de4"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.375610Z"
+   revision="16"/>
+<entry
+   committed-rev="9"
+   name="ov5640.pp"
+   text-time="2014-09-05T08:25:35.339753Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="90b2fe3b58d9f9ca690f220c100e0e3a"
+   last-author="gzz"
+   kind="file"
+   revision="9"/>
+<entry
+   committed-rev="9"
+   name="dm6437_init.pp"
+   text-time="2014-09-05T08:25:35.280749Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="7fa3fde948cd71c19c2736dfb086d4c1"
+   last-author="gzz"
+   kind="file"
+   revision="9"/>
+<entry
+   committed-rev="11"
+   name="dm6437_mcbsp.pp"
+   text-time="2014-09-23T13:32:02.746878Z"
+   committed-date="2014-09-23T15:57:10.850077Z"
+   checksum="bba1d7f8f9cd64885ccf9a72ac9b6683"
+   last-author="gzz"
+   kind="file"
+   revision="11"/>
+<entry
+   committed-rev="16"
+   name="dm6437_uart.obj"
+   text-time="2014-10-22T13:15:07.973542Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="05579de7647de4c4e79a7384b6ac083f"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T08:14:33.336776Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="wv511.obj"
+   text-time="2014-10-22T13:15:24.103464Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="f1b9c85db3d52d0d6ae99b9fa387b91f"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.751631Z"
+   revision="16"/>
+<entry
+   committed-rev="9"
+   name="buzzer.pp"
+   text-time="2014-09-05T08:25:35.237747Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="9e0c193035e4f0d0bf7f9442d8014df5"
+   last-author="gzz"
+   kind="file"
+   revision="9"/>
+<entry
+   committed-rev="9"
+   name="hdmi.pp"
+   text-time="2014-09-05T08:25:35.308751Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="2a890e6a6687de23c706649d439d663b"
+   last-author="gzz"
+   kind="file"
+   revision="9"/>
+<entry
+   committed-rev="9"
+   name="dm6437_i2c.pp"
+   text-time="2014-09-05T08:25:35.275749Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="842227ae7cb8ed43b9c527f4540c1839"
+   last-author="gzz"
+   kind="file"
+   revision="9"/>
+<entry
+   committed-rev="16"
+   name="key.obj"
+   text-time="2014-10-22T13:15:14.476914Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="a7c552e314bf83741b806e78b10f20e0"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.536619Z"
+   revision="16"/>
+<entry
+   name="camera.obj"
+   kind="file"
+   deleted="true"
+   revision="9"/>
+<entry
+   committed-rev="16"
+   name="dm6437_psc.obj"
+   text-time="2014-10-22T13:15:05.728413Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="c0b645669f8e1dfe045e76381a80ae05"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.460614Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="isr.obj"
+   text-time="2014-11-10T06:44:17.999037Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="40f0267880e75384dd5610838e31e4aa"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T08:14:33.382779Z"
+   revision="16"/>
+<entry
+   committed-rev="9"
+   name="key.pp"
+   text-time="2014-09-05T08:25:35.314751Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="340d76901588235307344416c5ce9bad"
+   last-author="gzz"
+   kind="file"
+   revision="9"/>
+<entry
+   committed-rev="16"
+   name="dm6437_edma3.obj"
+   text-time="2014-10-22T13:14:53.890736Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="2a58acaf1a67c1c575e5d200bacc4b22"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T08:14:33.313775Z"
+   revision="16"/>
+<entry
+   name="camera.pp"
+   kind="file"
+   deleted="true"
+   revision="9"/>
+<entry
+   committed-rev="16"
+   name="ov2710.obj"
+   text-time="2014-11-10T02:48:38.784320Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="a444e8c698f0649d035d6c3a53bd484a"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.677627Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="dm6437_ddr2.obj"
+   text-time="2014-10-22T13:14:52.071632Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="0f71ec6c11c71c9026fc653183717998"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.251602Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="dm6437_vpbe.obj"
+   text-time="2014-11-10T07:27:29.491261Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="9e7e0123bf5213ce69eb766fb0c9fdc8"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T08:14:33.354777Z"
+   revision="16"/>
+<entry
+   committed-rev="9"
+   name="dm6437_pll.pp"
+   text-time="2014-09-05T08:25:35.292750Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="f3531f700118dfc2bbee48fb070e433a"
+   last-author="gzz"
+   kind="file"
+   revision="9"/>
+<entry
+   committed-rev="16"
+   name="dm6437_gpio.obj"
+   text-time="2014-10-22T13:14:55.185810Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="80539ebf274b59d3b7928a3b0ab56ae0"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.280604Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="ov5640.obj"
+   text-time="2014-10-22T13:15:20.935283Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="998fe6b16edfcb81e0d49915f270f67e"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.712629Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="ov2710.pp"
+   text-time="2014-11-10T02:48:42.079508Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="ac5f48867000c969c5318ebddc158ff6"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="dm6437_vpfe.obj"
+   text-time="2014-11-10T04:47:24.137867Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="0f5ad14f1be7a835797ae7d52568eea4"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T08:14:33.368778Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="dm6437_vpbe.pp"
+   text-time="2014-11-10T07:27:34.072524Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="36224c321489fc9b553c6ff36a19cc64"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="dm6437_init.obj"
+   text-time="2014-11-10T08:09:05.278012Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="bd917d79a7f4dc7e242e5b8f47359c71"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.341608Z"
+   revision="16"/>
+<entry
+   committed-rev="9"
+   name="dm6437_gpio.pp"
+   text-time="2014-09-05T08:25:35.268749Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="10ca87924bb125c1ad15d28199fd4d8e"
+   last-author="gzz"
+   kind="file"
+   revision="9"/>
+<entry
+   committed-rev="16"
+   name="dm6437_vpfe.pp"
+   text-time="2014-11-10T04:47:26.968029Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="6e9dcd564af82740ac2a48ce4b0e8df7"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="11"
+   name="tmd2771.pp"
+   text-time="2014-09-23T12:44:31.623803Z"
+   committed-date="2014-09-23T15:57:10.850077Z"
+   checksum="a7fa30fb00af341e51c364f26c6748be"
+   last-author="gzz"
+   kind="file"
+   revision="11"/>
+<entry
+   committed-rev="9"
+   name="dm6437_cache.pp"
+   text-time="2014-09-05T08:25:35.246747Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="f42136ffd00dd2b0a856bf59da650c7e"
+   last-author="gzz"
+   kind="file"
+   revision="9"/>
+<entry
+   committed-rev="16"
+   name="norflash.obj"
+   text-time="2014-11-10T08:00:20.216981Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="a4a402f1cf717c2d2adb95d4a2aafcbb"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.631624Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="subdir_vars.mk"
+   text-time="2014-11-10T03:00:41.260643Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="1aa1f314d6272e072f4185f3fa92d91a"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="hdmi.obj"
+   text-time="2014-10-22T13:15:11.296732Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="221fd1de100e364bded1dbdabfc7c528"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.497617Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="buzzer.obj"
+   text-time="2014-10-22T13:14:48.950454Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="2fb4d5f32fa2d0daa46cc1ee01747031"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.184599Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="dm6437_i2c.obj"
+   text-time="2014-11-07T11:03:05.547218Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="dfd8d54baf5988c354e6d0379c7de493"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.309606Z"
+   revision="16"/>
+<entry
+   committed-rev="11"
+   name="norflash.pp"
+   text-time="2014-09-23T13:32:02.753879Z"
+   committed-date="2014-09-23T15:57:10.850077Z"
+   checksum="c56200ceef6475179c0b3464b697da34"
+   last-author="gzz"
+   kind="file"
+   revision="11"/>
+<entry
+   committed-rev="16"
+   name="dm6437_uart.pp"
+   text-time="2014-10-22T13:15:50.596914Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="76c617fec260c5558013714df1713ea1"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="wv511.pp"
+   text-time="2014-10-22T13:15:50.765924Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="c1209d0d3f733d0942b870f46e8ea62f"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="dm6437_pll.obj"
+   text-time="2014-10-22T13:15:04.310332Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="ce919b5eca80524d78323a82c114df5e"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.423612Z"
+   revision="16"/>
+<entry
+   committed-rev="9"
+   name="dm6437_psc.pp"
+   text-time="2014-09-05T08:25:35.302751Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="d6211b08368b33170eb78539d95211e8"
+   last-author="gzz"
+   kind="file"
+   revision="9"/>
+<entry
+   committed-rev="16"
+   name="subdir_rules.mk"
+   text-time="2014-11-10T03:00:41.265643Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="6b7208b76ec331910fefaa4959da37eb"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="lcd.obj"
+   text-time="2014-11-10T07:53:36.580894Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="2d197a56812263121c60a5fc9102c8a7"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.592622Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="dm6437_edma3.pp"
+   text-time="2014-10-22T13:15:50.467907Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="9390407ca88f7d9cf52bf218bb94b2b0"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="isr.pp"
+   text-time="2014-11-10T06:44:26.042497Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="cabe82d9e8dcd8d9d3db121593c439c4"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="vector.obj"
+   text-time="2014-10-22T13:32:46.802757Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="a129b7981470186ad467344d29fe252e"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T08:14:33.398780Z"
+   revision="16"/>
+<entry
+   committed-rev="9"
+   name="dm6437_ddr2.pp"
+   text-time="2014-09-05T08:25:35.259748Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="3095a716e6c9a67c850263ab07a6e656"
+   last-author="gzz"
+   kind="file"
+   revision="9"/>
+<entry
+   committed-rev="16"
+   name="tmd2771.obj"
+   text-time="2014-11-07T06:38:24.876896Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="f5d797e14b7b370fc31d5398f8abcc4e"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-23T15:57:02.967502Z"
+   revision="16"/>
+</wc-entries>

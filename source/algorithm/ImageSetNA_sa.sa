@@ -1,0 +1,27 @@
+ .sect "L3_PROGRAM"
+ 
+ .global _ImageSetNA_sa
+
+_ImageSetNA_sa: .cproc  pOutBuf, Width, Height, Stride, pColor
+  .reg  loop_i, loop_j, LP0_Cnt, tmp, OutStride   
+  .reg  InBufA, Color0
+      
+  MV    pOutBuf,   InBufA
+  ADD   Width,     0x1,       tmp
+  SHR   tmp,       0x1,       LP0_Cnt 
+  LDW   *pColor,   Color0         ;加载1个字到C olor0寄存器变量
+  SUB   Height,    0x1,       loop_j
+  SHL   Width,     0x1,       tmp
+  SUB   Stride,    tmp,       OutStride
+
+ImageSetNALP1:
+  SUB   LP0_Cnt,   0x1,       loop_i
+
+ImageSetNALP0: 
+  STNW  Color0,   *InBufA++ ;加载一个寄存器变量到内存，InBufA存储地址，结束后地址自加
+  [loop_i]BDEC     ImageSetNALP0,  loop_i ;[loop_i]为执行该指令时需满足的条件，BDEC指令:跳转对应的位置，对目的数减1，
+  
+  ADD   InBufA,    OutStride,    InBufA   ;依据步进值调整地址
+  [loop_j]BDEC     ImageSetNALP1,  loop_j 
+      
+ .endproc

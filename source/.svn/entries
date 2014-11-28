@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="12"
+   name=""
+   committed-date="2014-10-08T15:26:57.811968Z"
+   url="svn://192.168.1.217/hd_project/source"
+   last-author="gzz"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="12"/>
+<entry
+   name="app"
+   kind="dir"/>
+<entry
+   name="algorithm"
+   kind="dir"/>
+<entry
+   name="drivers"
+   kind="dir"/>
+</wc-entries>

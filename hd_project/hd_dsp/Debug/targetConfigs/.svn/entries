@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="7"
+   name=""
+   committed-date="2014-09-03T15:45:10.093210Z"
+   url="svn://192.168.1.217/hd_project/hd_project/hd_dsp/Debug/targetConfigs"
+   last-author="gzz"
+   kind="dir"
+   revision="8"/>
+<entry
+   committed-rev="7"
+   name="subdir_rules.mk"
+   text-time="2014-09-03T08:31:51.370971Z"
+   committed-date="2014-09-03T15:45:10.093210Z"
+   checksum="d1576c6ff98ac3372463039ccef3687a"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="subdir_vars.mk"
+   text-time="2014-09-05T08:25:14.269548Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="a5c5635f62a61ebbf33969c9d6070a65"
+   last-author="gzz"
+   kind="file"
+   revision="9"/>
+</wc-entries>

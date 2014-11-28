@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="8"
+   name=""
+   committed-date="2014-09-04T16:10:14.527913Z"
+   url="svn://192.168.1.217/hd_project"
+   last-author="gzz"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="8"/>
+<entry
+   committed-rev="16"
+   name="720p.bin"
+   text-time="2014-10-27T02:39:27.822401Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="d36ec477cf9003a9b6c0a9c63a303a27"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   name="hd_osd"
+   kind="dir"/>
+<entry
+   name="source"
+   kind="dir"/>
+<entry
+   name="hd_project"
+   kind="dir"/>
+<entry
+   name="include"
+   kind="dir"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   committed-rev="16"
+   name="test.bin"
+   text-time="2014-11-03T07:11:18.600177Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="c2f9e4dacc8ab67a6445579caaa05c49"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   name="GEL"
+   kind="dir"/>
+<entry
+   name="AIS_Image"
+   kind="dir"/>
+</wc-entries>

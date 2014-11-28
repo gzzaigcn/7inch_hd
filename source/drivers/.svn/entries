@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="12"
+   name=""
+   committed-date="2014-10-08T15:26:57.811968Z"
+   url="svn://192.168.1.217/hd_project/source/drivers"
+   last-author="gzz"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="12"/>
+<entry
+   committed-rev="16"
+   name="ov2710.c"
+   text-time="2014-11-10T02:48:26.591622Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="c1ee0fb01c6eeeb60046252759fba534"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="7"
+   name="dm6437_ddr2.c"
+   text-time="2014-09-03T12:50:37.027250Z"
+   committed-date="2014-09-03T15:45:10.093210Z"
+   checksum="a061fe9cc4e8ee73500cb5fa48dbf20d"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="vector.asm"
+   text-time="2014-10-22T13:32:32.614103Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="cb5e616623661235db90119b88eb2781"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="dm6437_vpbe.c"
+   text-time="2014-11-10T07:27:15.635469Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="b7032ec6a0fc64b487383d5b69c1ed42"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="lcd.c"
+   text-time="2014-11-10T07:34:38.088776Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="82b7c5c295bca041d08aec76c299a561"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T07:15:41.156747Z"
+   revision="16"/>
+<entry
+   committed-rev="7"
+   name="dm6437_gpio.c"
+   text-time="2014-09-03T12:17:50.905794Z"
+   committed-date="2014-09-03T15:45:10.093210Z"
+   checksum="d13e39be7bc61d1ef0512e4eab24d59b"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="ov5640.c"
+   text-time="2014-10-22T08:28:18.612142Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="796aa57e27824fb35a2652e5353b8db0"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="dm6437_vpfe.c"
+   text-time="2014-11-10T04:47:01.744586Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="27900445dc1ffb7052dbdf47a14b4277"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="tmd2771.c"
+   text-time="2014-11-07T06:38:12.528189Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="5e1ec22e12650831371c4ea45634e0a0"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="12"
+   name="dm6437_cache.c"
+   text-time="2014-09-24T13:40:47.420685Z"
+   committed-date="2014-10-08T15:26:57.811968Z"
+   checksum="c5aa2bd76e171a0c7b1ff7e2b3e3d4cc"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="dm6437_init.c"
+   text-time="2014-11-10T08:09:10.572315Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="9d3a1414ffef80d2d233fbce7ab93489"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="13"
+   name="dm6437_mcbsp.c"
+   text-time="2014-11-10T06:11:58.388097Z"
+   committed-date="2014-11-10T06:11:54.779870Z"
+   checksum="8a03dd98ce018d1cd5f6d09c8ae2c5d0"
+   last-author="lgq"
+   kind="file"
+   prop-time="2014-11-10T06:11:58.368096Z"
+   revision="13"/>
+<entry
+   committed-rev="16"
+   name="norflash.c"
+   text-time="2014-11-10T08:11:27.125125Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="cc7c684d2abffb5bbc5585754f5fae86"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="7"
+   name="dm6437_uart.c"
+   text-time="2014-09-03T12:04:05.611590Z"
+   committed-date="2014-09-03T15:45:10.093210Z"
+   checksum="8c6cad74111470b59fd4bb53b9193c15"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="6"
+   name="hdmi.c"
+   text-time="2014-09-03T08:37:58.669979Z"
+   committed-date="2014-09-03T11:14:10.270761Z"
+   checksum="81051bcc2cf1bedf378224b0a93e2877"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="dm6437_i2c.c"
+   text-time="2014-11-07T08:06:48.282233Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="c39050ad23419d00a40b307cdf37843e"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="6"
+   name="buzzer.c"
+   text-time="2014-09-03T08:43:25.303662Z"
+   committed-date="2014-09-03T11:14:10.270761Z"
+   checksum="81051bcc2cf1bedf378224b0a93e2877"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="wv511.c"
+   text-time="2014-10-22T05:33:50.552126Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="8e98058b88bea63a4cc01ff4299d8ee8"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="6"
+   name="key.c"
+   text-time="2014-09-03T08:33:07.355317Z"
+   committed-date="2014-09-03T11:14:10.270761Z"
+   checksum="81051bcc2cf1bedf378224b0a93e2877"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="7"
+   name="dm6437_psc.c"
+   text-time="2014-09-03T12:21:42.100018Z"
+   committed-date="2014-09-03T15:45:10.093210Z"
+   checksum="20f226afabd98013c0f161a515f4b7df"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="7"
+   name="dm6437_pll.c"
+   text-time="2014-09-03T12:21:34.210566Z"
+   committed-date="2014-09-03T15:45:10.093210Z"
+   checksum="c7d9e28f2e40056800e4e0b231c58520"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="dm6437_edma3.c"
+   text-time="2014-10-20T03:02:06.928179Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="841c5ade624dcf8dc70f8b5a52019435"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="isr.c"
+   text-time="2014-11-10T05:18:58.364210Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="1aa1741c471c624d119acf12205c7971"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+</wc-entries>

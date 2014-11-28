@@ -1,0 +1,3 @@
+C:\Perl\bin\perl.exe genAIS.pl -otype binary -i SPI_secondary_boot.out -o SPI_secondary_boot.bin -bootmode spi -memwidth 8  -datawidth 8 
+-addrsz 24 -cfg evmdm6437.cfg
+pause

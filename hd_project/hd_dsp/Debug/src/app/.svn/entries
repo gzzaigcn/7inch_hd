@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="7"
+   name=""
+   committed-date="2014-09-03T15:45:10.093210Z"
+   url="svn://192.168.1.217/hd_project/hd_project/hd_dsp/Debug/src/app"
+   last-author="gzz"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="8"/>
+<entry
+   committed-rev="16"
+   name="camera.obj"
+   text-time="2014-10-22T13:15:25.140524Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="5ce03ac089b1cc5dade7dd851ab67e19"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-09T14:53:28.152597Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="main.pp"
+   text-time="2014-11-10T08:00:27.597403Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="7e4d1d190afd3d73bc90ce42df581104"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="11"
+   name="norflash_fs.pp"
+   text-time="2014-09-23T13:40:59.828598Z"
+   committed-date="2014-09-23T15:57:10.850077Z"
+   checksum="41257fed0d5c7594fc3454d9b88a8e5a"
+   last-author="gzz"
+   kind="file"
+   revision="11"/>
+<entry
+   committed-rev="16"
+   name="realplay.obj"
+   text-time="2014-11-10T06:44:20.872201Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="192a0db2919c18a10fb33f3b25fb3a1d"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T08:14:33.293774Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="camera.pp"
+   text-time="2014-10-22T13:15:50.770924Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="d763ac6c79cc6e6255b6e46ed0659199"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="realplay.pp"
+   text-time="2014-11-10T06:44:26.079499Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="d0c0f3136bc6517f4a67e40fe1cf27e7"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="subdir_rules.mk"
+   text-time="2014-10-22T13:14:45.163261Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="d78ae7b2d43ba3adcf7134e5ab8ade2b"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="subdir_vars.mk"
+   text-time="2014-10-22T13:14:45.153261Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="611b725b197897f35e90f1591b0e0757"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="main.obj"
+   text-time="2014-11-10T08:00:22.728124Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="cb4b35c1f44f47834edc8c8f2dd193d8"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:14:30.831456Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="norflash_fs.obj"
+   text-time="2014-10-22T13:15:30.048797Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="8b6316976be6c66fd1805ee533a5b63b"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-23T15:57:02.896498Z"
+   revision="16"/>
+</wc-entries>

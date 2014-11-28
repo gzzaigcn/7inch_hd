@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="7"
+   name=""
+   committed-date="2014-09-03T15:45:10.093210Z"
+   url="svn://192.168.1.217/hd_project/hd_project/hd_dsp/Debug"
+   last-author="gzz"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="8"/>
+<entry
+   committed-rev="2"
+   name="objects.mk"
+   text-time="2014-09-03T07:33:14.119796Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="02cddb323c6efe22bb233babed130d18"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   name="targetConfigs"
+   kind="dir"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   committed-rev="16"
+   name="ccsObjs.opt"
+   text-time="2014-11-10T08:08:59.823700Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="e4e081272e51fa3e48249e990a8b107e"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="hd_dsp.out"
+   text-time="2014-11-10T08:09:07.407134Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="587d40ca44f6bbfd53f2cca07afbd08e"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:14:30.614443Z"
+   revision="16"/>
+<entry
+   name="src"
+   kind="dir"/>
+<entry
+   committed-rev="16"
+   name="hd_dsp_linkInfo.xml"
+   text-time="2014-11-10T08:09:07.199122Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="ca9ff968eef8845d27181bb94d35a299"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="sources.mk"
+   text-time="2014-11-10T08:08:58.530626Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="28c539bf949a7e881878817d6a8a200f"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="hd_dsp.map"
+   text-time="2014-11-10T08:09:07.203122Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="082fab9cc034e3e7933f7ae67691201c"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="makefile"
+   text-time="2014-11-10T08:08:59.908705Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="37a5f53d7a206e41343507a5f37d422b"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+</wc-entries>

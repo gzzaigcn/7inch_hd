@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2014-09-03T08:15:57.279546Z"
+   url="svn://192.168.1.217/hd_project/GEL"
+   last-author="gzz"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="8"/>
+<entry
+   committed-rev="16"
+   name="7inch_hd_dm6437.gel.bak"
+   text-time="2014-09-03T07:39:24.841000Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="10bfaeb6c572de33761f14c31b7eb91a"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="7inch_hd_dm6437.gel"
+   text-time="2014-10-20T02:20:37.076146Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="f43afe48b673cc194b8f583572f89118"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+</wc-entries>

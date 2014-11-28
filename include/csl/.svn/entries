@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="16"
+   name=""
+   committed-date="2013-11-24T15:22:09.445396Z"
+   url="svn://192.168.1.220/dm6437_visual/dsp/include/csl"
+   last-author="gzz"
+   kind="dir"
+   revision="25"/>
+<entry
+   committed-rev="16"
+   name="csl_error.h"
+   text-time="2011-12-01T04:39:02.046875Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="b045f08abea66b037eea5124568fff46"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_pwrdwnPdc.h"
+   text-time="2011-12-01T04:39:02.265625Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="7328caf8fe3d564c6756067db96d18b6"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="_csl_intc.h"
+   text-time="2011-12-01T04:39:02.015625Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="a193cddfd58d486b796039270a17924d"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_edmacc.h"
+   text-time="2011-12-01T04:39:02.140625Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="0ff373d0e8d9b0f16ec24c2f3cfcd03c"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_pwrdwnAux.h"
+   text-time="2011-12-01T04:39:02.093750Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="f18026016ded8879b12711b9b1cf5e24"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_pwrdwnL2.h"
+   text-time="2011-12-01T04:39:02.265625Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="07b2819a9f980353d31f3ad097e15add"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="_csl_cache.h"
+   text-time="2011-12-01T04:39:02.015625Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="2ed496e5593a7ccd1aaeb81e67b43b64"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="_csl_mcbsp.h"
+   text-time="2011-12-01T04:39:02.015625Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="d925df6b1c6d9ee006c550db7ec6f879"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_cache.h"
+   text-time="2011-12-01T04:39:02.031250Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="2643b03a26325cf96242e427b8166a39"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_mcbsp.h"
+   text-time="2011-12-01T04:39:02.078125Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="b5276a2a09312ee267140fa29949703a"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_memprot_L1D.h"
+   text-time="2011-12-01T04:39:02.250000Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="0387d934e704b18563334a5027a713a1"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_sysroutines.h"
+   text-time="2011-12-01T04:39:02.109375Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="7b71edf44d8b15f0dd318205920a192c"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_intcAux.h"
+   text-time="2011-12-01T04:39:02.078125Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="5632d2cddd363c7c7f6f66f1ab65c85a"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="tistdtypes.h"
+   text-time="2011-12-01T04:39:02.265625Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="441a44f3b50ce7e4978588759c27e6a8"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_cfgAux.h"
+   text-time="2011-12-01T04:39:02.031250Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="5d129e2d65949772e43a4af1f6f6b96c"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_edc.h"
+   text-time="2011-12-01T04:39:02.125000Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="9e002933a268f51142ae0ff44cac84e6"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_intc.h"
+   text-time="2011-12-01T04:39:02.171875Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="32f528e1b6037ef5ecfa3e641bdaa3cf"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_memprot_L1P.h"
+   text-time="2011-12-01T04:39:02.250000Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="d80a63696c7951ae16e83def0026ab8d"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_cfg.h"
+   text-time="2011-12-01T04:39:02.125000Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="4e1a67a371e08f135f858c1029a9927e"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_pwrdwn.h"
+   text-time="2011-12-01T04:39:02.093750Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="271001d09d1b3580829fa76e4a3c7b56"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_mcbspAux.h"
+   text-time="2011-12-01T04:39:02.078125Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="d9f16aad1c92e458faca86185af703cb"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_version.h"
+   text-time="2011-12-01T04:39:02.109375Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="c3401b79c986dbee271c8a57558020f1"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_tsc.h"
+   text-time="2011-12-01T04:39:02.109375Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="f708db2627d7dd8b1124277fdfdb9c47"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_memprot_config.h"
+   text-time="2011-12-01T04:39:02.250000Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="a3568877921d097391089bd9600b26ad"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_idma.h"
+   text-time="2011-12-01T04:39:02.140625Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="7d3d4cb59995f267559026723bfb0ff4"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_intc.h"
+   text-time="2011-12-01T04:39:02.062500Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="621a8cc07dcff46c955ab7c53b8bb1f0"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_bwmngmt.h"
+   text-time="2011-12-01T04:39:02.125000Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="479d2309398b981cb28d93de6068886f"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_cfg.h"
+   text-time="2011-12-01T04:39:02.031250Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="1aa8d663f33efbcaee99612a8e996f86"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_memprotAux.h"
+   text-time="2011-12-01T04:39:02.093750Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="12d1c918207c4213b1cf46a44afb0828"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr.h"
+   text-time="2011-12-01T04:39:02.109375Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="80ac8f04b9166ef6d23bd5a9e69539a2"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_memprot_L2.h"
+   text-time="2011-12-01T04:39:02.265625Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="04ea738d4ee1ab7f0c07e0e30008a9cc"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_types.h"
+   text-time="2013-10-17T08:52:48.240736Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="82c47d003af6b452a63f84f20eb45cbc"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_chip.h"
+   text-time="2011-12-01T04:39:02.125000Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="f2a0c9f77f394048a24cc64333e2af98"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_resId.h"
+   text-time="2011-12-01T04:39:02.109375Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="31d65cbd743276ffcdba0bdb930b814b"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_edma.h"
+   text-time="2011-12-01T04:39:02.046875Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="0b4f967403a4e1453799c9675b84571c"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_idma.h"
+   text-time="2011-12-01T04:39:02.046875Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="a4d4f47c3eabc034e7103f7a9809ee83"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_bwmngmt.h"
+   text-time="2011-12-01T04:39:02.031250Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="3f9d4385c0a9fcfc54635014c8419364"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_edmatc.h"
+   text-time="2011-12-01T04:39:02.140625Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="871f271bdca9fe3e1c902fc4881ca263"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl.h"
+   text-time="2011-12-01T04:39:02.031250Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="8ed3320f57609dce6be252e79c584acb"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_chip.h"
+   text-time="2011-12-01T04:39:02.046875Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="43c6a48ba3e728e705151261ae6b084c"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_memprot.h"
+   text-time="2011-12-01T04:39:02.078125Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="2d4c13a64511048e120e5fa988920ce8"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="soc.h"
+   text-time="2011-12-01T04:39:02.265625Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="315b441f272f5c035bf5d4364e281e72"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="csl_edmaAux.h"
+   text-time="2011-12-01T04:39:02.046875Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="faafc21f98367eab95dd9fd9bccf5d0a"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_cache.h"
+   text-time="2011-12-01T04:39:02.125000Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="caa19201b466fbba18704c18ae522c2c"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="cslr_mcbsp.h"
+   text-time="2011-12-01T04:39:02.171875Z"
+   committed-date="2013-11-24T15:22:09.445396Z"
+   checksum="cb7eff60b470b7d35fb8d34c475d9238"
+   last-author="gzz"
+   kind="file"/>
+</wc-entries>

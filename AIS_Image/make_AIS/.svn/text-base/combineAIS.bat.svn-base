@@ -1,0 +1,2 @@
+C:\Perl\bin\perl.exe combineAIS.pl SPI_secondary_boot.bin led.bin app_ais.bin 10
+pause

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="7"
+   name=""
+   committed-date="2014-09-03T15:45:10.093210Z"
+   url="svn://192.168.1.217/hd_project/hd_project/hd_dsp/Debug/src/alg"
+   last-author="gzz"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="8"/>
+<entry
+   committed-rev="16"
+   name="ColorTransStatTable_sa.obj"
+   text-time="2014-10-22T13:15:34.682021Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="574270a236b88b11b076792dd394811f"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T08:14:33.247771Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="ContrastBrightSaturationStatTable_sa.obj"
+   text-time="2014-10-22T13:15:36.664132Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="fb49e779d5aeacc2367addf29f3d0e20"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T08:14:33.260772Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="ImageCopyNA_sa.obj"
+   text-time="2014-10-22T13:15:41.624408Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="54009a2890518dfab123061bd6c193de"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:14:30.761452Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="subdir_rules.mk"
+   text-time="2014-10-22T13:14:46.109302Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="349c0307e7fa7cd40118fdac4d378d8b"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="img_alg.obj"
+   text-time="2014-10-22T13:15:47.426735Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="917c462022d5fb11075c37901bcb553f"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T08:14:33.282773Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="CalBlockGray_sa.obj"
+   text-time="2014-10-22T13:15:33.372957Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="a1d980755d102ee93f6ea7a298b8d5c3"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:14:30.736450Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="ImageCopy_sa.obj"
+   text-time="2014-10-22T13:15:42.728469Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="79e30db317ffbddad34121db65244bb7"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:14:30.752451Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="ImageSetNA_sa.obj"
+   text-time="2014-10-22T13:15:43.620520Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="ff492d8c910ec25484d4b25d03f4c25c"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:14:30.769452Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="subdir_vars.mk"
+   text-time="2014-10-22T13:14:46.089302Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="337157b2d3cd5da81257b5ee9a34bf6b"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="GrayTransStatTable_sa.obj"
+   text-time="2014-10-22T13:15:39.093268Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="644d83160eecf3d405eb819820c2017b"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:14:30.743451Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="ColorTransTable_sa.obj"
+   text-time="2014-10-22T13:15:35.488068Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="870e21bf757aee574d2d5114606d0497"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T08:14:33.254772Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="ContrastBrightSaturationTable_sa.obj"
+   text-time="2014-10-22T13:15:37.987204Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="dfa9e4a82f241a8572a2d573b9c4fa59"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T08:14:33.267772Z"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="img_alg.pp"
+   text-time="2014-10-22T13:15:50.797925Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="ecda645b9ccf1706d51da57d498b50ed"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="GrayTransTable_sa.obj"
+   text-time="2014-10-22T13:15:40.545348Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="765f5e81b925f6c45cc7c85f29883e2e"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-11-10T08:14:33.275773Z"
+   revision="16"/>
+</wc-entries>

@@ -1,0 +1,912 @@
+******************************************************************************
+               TMS320C6x Linker PC v7.4.2                      
+******************************************************************************
+>> Linked Sat Nov 22 00:03:59 2014
+
+OUTPUT FILE NAME:   <hd_dsp.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 8700b1a0
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  VECS                  10800000   00000800  00000200  00000600  RWIX
+  L2RAM                 10800800   00010000  00000000  00010000  RWIX
+  L1PRAM                10e08000   00008000  00000000  00008000  RWIX
+  L1DRAM_0              10f04000   0000c000  0000a060  00001fa0  RWIX
+  L1DRAM_1              10f10000   00008000  00000000  00008000  RWIX
+  DDR2_0                80000000   01000000  00fd6000  0002a000  RWIX
+  DDR2_1                81000000   01000000  00b6d200  00492e00  RWIX
+  DDR2_2                82000000   01000000  002ee000  00d12000  RWIX
+  DDR2_3                83000000   01000000  005dc000  00a24000  RWIX
+  DDR2_4                84000000   01000000  00000000  01000000  RWIX
+  DDR2_5                85000000   01000000  00000000  01000000  RWIX
+  DDR2_6                86000000   01000000  00000000  01000000  RWIX
+  DDR2_7                87000000   01000000  00024e50  00fdb1b0  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.vectors   0    10800000    00000200     
+                  10800000    00000200     vector.obj (.vectors)
+
+.data      0    10800800    00000000     UNINITIALIZED
+
+L1_DATA0   0    10f04000    0000a060     UNINITIALIZED
+                  10f04000    0000a000     dm6437_edma3.obj (L1_DATA0)
+                  10f0e000    00000060     img_alg.obj (L1_DATA0)
+
+L3_DATA0   0    80000000    00fd6000     UNINITIALIZED
+                  80000000    00fd2000     dm6437_vpfe.obj (L3_DATA0)
+                  80fd2000    00004000     dm6437_uart.obj (L3_DATA0)
+
+L3_DATA1   0    81000000    00b6d200     UNINITIALIZED
+                  81000000    00b6d200     dm6437_vpfe.obj (L3_DATA1)
+
+L3_DATA2   0    82000000    002ee000     UNINITIALIZED
+                  82000000    002ee000     dm6437_vpfe.obj (L3_DATA2)
+
+L3_DATA3   0    83000000    005dc000     UNINITIALIZED
+                  83000000    005dc000     dm6437_vpbe.obj (L3_DATA3)
+
+.text      0    87000000    0000b680     
+                  87000000    00000ce0     isr.obj (.text:retain)
+                  87000ce0    00000ba0     dm6437_vpfe.obj (.text)
+                  87001880    000006e0     csl_davinciC64plus.lib : csl_cacheL1.o (.text:cslsys_section:cache)
+                  87001f60    000005a0     dm6437_edma3.obj (.text)
+                  87002500    00000580     rts64plus.lib : _printfi.obj (.text:__getarg_diouxp)
+                  87002a80    00000540                   : divd.obj (.text:__divd)
+                  87002fc0    00000440                   : _printfi.obj (.text:__printfi)
+                  87003400    00000440                   : _printfi.obj (.text:__setfield)
+                  87003840    00000440     csl_davinciC64plus.lib : csl_cacheL2.o (.text:cslsys_section:cache)
+                  87003c80    00000420     dm6437_pll.obj (.text)
+                  870040a0    00000420     ov2710.obj (.text)
+                  870044c0    000003c0     ov5640.obj (.text)
+                  87004880    000003a0     rts64plus.lib : fputs.obj (.text:_fputs)
+                  87004c20    000003a0     dm6437_i2c.obj (.text)
+                  87004fc0    00000380     csl_davinciC64plus.lib : csl_cacheWait.o (.text:cslsys_section:cache)
+                  87005340    00000360     dm6437_init.obj (.text)
+                  870056a0    00000360     dm6437_vpbe.obj (.text)
+                  87005a00    00000340     rts64plus.lib : _printfi.obj (.text:__pproc_fge)
+                  87005d40    00000300                   : _printfi.obj (.text:_ecvt)
+                  87006040    00000300                   : _printfi.obj (.text:_fcvt)
+                  87006340    000002c0                   : _printfi.obj (.text:__pproc_fwp)
+                  87006600    000002c0     dm6437_psc.obj (.text)
+                  870068c0    000002a0     rts64plus.lib : _printfi.obj (.text:__pconv_e)
+                  87006b60    00000280                   : memory.obj (.text:_free)
+                  87006de0    00000280     isr.obj (.text)
+                  87007060    00000260     rts64plus.lib : imath64.obj (.text:__divull)
+                  870072c0    00000260                   : mpyd.obj (.text:__mpyd)
+                  87007520    00000240                   : _printfi.obj (.text:__pproc_diouxp)
+                  87007760    00000220                   : _printfi.obj (.text:__pproc_str)
+                  87007980    00000220                   : fputc.obj (.text:_fputc)
+                  87007ba0    00000200                   : addd.obj (.text:__addd)
+                  87007da0    00000200                   : frcaddd.obj (.text:__frcaddd)
+                  87007fa0    00000200                   : _printfi.obj (.text:__pconv_g)
+                  870081a0    00000200                   : setvbuf.obj (.text:_setvbuf)
+                  870083a0    00000200     dm6437_gpio.obj (.text)
+                  870085a0    000001c0     rts64plus.lib : _printfi.obj (.text:__mcpy)
+                  87008760    000001a0                   : imath40.obj (.text:__divul)
+                  87008900    00000180                   : trgdrv.obj (.text:_HOSTrename)
+                  87008a80    00000180                   : memory.obj (.text:_malloc)
+                  87008c00    00000160     dm6437_ddr2.obj (.text)
+                  87008d60    00000140     rts64plus.lib : lowlev.obj (.text:_getdevice)
+                  87008ea0    00000120                   : fclose.obj (.text:__closefile)
+                  87008fc0    00000120                   : _printfi.obj (.text:__ltostr)
+                  870090e0    00000120                   : _printfi.obj (.text:__pproc_fflags)
+                  87009200    00000120                   : fseek.obj (.text:_fseek)
+                  87009320    00000100                   : trgdrv.obj (.text:_HOSTlseek)
+                  87009420    00000100                   : frcmpyd.obj (.text:__frcmpyd)
+                  87009520    00000100                   : _io_perm.obj (.text:__wrt_ok)
+                  87009620    00000100     dm6437_cache.obj (.text)
+                  87009720    000000e0     rts64plus.lib : trgdrv.obj (.text:_HOSTopen)
+                  87009800    000000e0                   : cmpd.obj (.text:__cmpd)
+                  870098e0    000000e0                   : atoi.obj (.text:_atoi)
+                  870099c0    000000e0                   : lowlev.obj (.text:_close)
+                  87009aa0    000000e0                   : memset.obj (.text:_memset)
+                  87009b80    000000e0                   : printf.obj (.text:_printf)
+                  87009c60    000000e0     camera.obj (.text)
+                  87009d40    000000c0     rts64plus.lib : trgdrv.obj (.text:_HOSTread)
+                  87009e00    000000c0                   : trgdrv.obj (.text:_HOSTunlink)
+                  87009ec0    000000c0                   : trgdrv.obj (.text:_HOSTwrite)
+                  87009f80    000000c0                   : autoinit.obj (.text:__auto_init)
+                  8700a040    000000c0                   : _printfi.obj (.text:__div)
+                  8700a100    000000c0                   : divu.obj (.text:__divu)
+                  8700a1c0    000000c0                   : fflush.obj (.text:__doflush)
+                  8700a280    000000c0                   : exit.obj (.text:_exit)
+                  8700a340    000000c0                   : ltoa.obj (.text:_ltoa)
+                  8700a400    000000a0                   : trgdrv.obj (.text:_HOSTclose)
+                  8700a4a0    000000a0                   : fopen.obj (.text:__cleanup)
+                  8700a540    000000a0                   : imath40.obj (.text:__divli)
+                  8700a5e0    000000a0                   : _printfi.obj (.text:__ecpy)
+                  8700a680    000000a0                   : _printfi.obj (.text:__fcpy)
+                  8700a720    000000a0                   : fixdli.obj (.text:__fixdli)
+                  8700a7c0    000000a0                   : _printfi.obj (.text:__pconv_f)
+                  8700a860    000000a0                   : cpy_tbl.obj (.text:_copy_in)
+                  8700a900    000000a0                   : lowlev.obj (.text:_finddevice)
+                  8700a9a0    000000a0                   : lowlev.obj (.text:_lseek)
+                  8700aa40    000000a0                   : memcpy64.obj (.text:_memcpy)
+                  8700aae0    000000a0                   : memory.obj (.text:_minsert)
+                  8700ab80    000000a0                   : memory.obj (.text:_mremove)
+                  8700ac20    000000a0                   : lowlev.obj (.text:_write)
+                  8700acc0    000000a0     lcd.obj (.text)
+                  8700ad60    00000080     rts64plus.lib : fixdi.obj (.text:__fixdi)
+                  8700ade0    00000080                   : fltlid.obj (.text:__fltlid)
+                  8700ae60    00000080                   : llshift.obj (.text:__llshl)
+                  8700aee0    00000080                   : renormd.obj (.text:__renormd)
+                  8700af60    00000080                   : trgmsg.obj (.text:_readmsg)
+                  8700afe0    00000080                   : lowlev.obj (.text:_unlink)
+                  8700b060    00000080     csl_davinciC64plus.lib : _csl_cache.o (.text:cslsys_section:cache)
+                  8700b0e0    00000060     rts64plus.lib : cpp_init.obj (.text:___TI_cpp_init)
+                  8700b140    00000060                   : imath64.obj (.text:__subcull)
+                  8700b1a0    00000060                   : boot.obj (.text:_c_int00)
+                  8700b200    00000060                   : memccpy.obj (.text:_memccpy)
+                  8700b260    00000060                   : trgmsg.obj (.text:_writemsg)
+                  8700b2c0    00000060     main.obj (.text)
+                  8700b320    00000060     realplay.obj (.text)
+                  8700b380    00000040     rts64plus.lib : isinf.obj (.text:___isinf)
+                  8700b3c0    00000040                   : _printfi.obj (.text:___isnan)
+                  8700b400    00000040                   : args_main.obj (.text:__args_main)
+                  8700b440    00000040                   : frcmpyd_div.obj (.text:__frcmpyd_div)
+                  8700b480    00000040                   : llshift.obj (.text:__llshru)
+                  8700b4c0    00000040                   : negd.obj (.text:__negd)
+                  8700b500    00000040                   : imath40.obj (.text:__remli)
+                  8700b540    00000040                   : subd.obj (.text:__subd)
+                  8700b580    00000020                   : negll.obj (.text:__negll)
+                  8700b5a0    00000020                   : _lock.obj (.text:__nop)
+                  8700b5c0    00000020                   : printf.obj (.text:__outc)
+                  8700b5e0    00000020                   : printf.obj (.text:__outs)
+                  8700b600    00000020                   : exit.obj (.text:_abort)
+                  8700b620    00000020                   : remove.obj (.text:_remove)
+                  8700b640    00000020     csl_davinciC64plus.lib : csl_cacheEnable.o (.text:cslsys_section:cache)
+                  8700b660    00000020     vector.obj (.text)
+
+.far       0    8700b680    00008480     UNINITIALIZED
+                  8700b680    00006a6c     norflash_fs.obj (.far)
+                  870120ec    00000004     rts64plus.lib : fopen.obj (.far)
+                  870120f0    00000cf8     img_alg.obj (.far)
+                  87012de8    000004dc     ov5640.obj (.far)
+                  870132c4    00000004     --HOLE--
+                  870132c8    00000324     rts64plus.lib : defs.obj (.far)
+                  870135ec    00000004     --HOLE--
+                  870135f0    00000188     ov2710.obj (.far)
+                  87013778    0000011c     rts64plus.lib : lowlev.obj (.far)
+                  87013894    00000004     --HOLE--
+                  87013898    00000118     wv511.obj (.far)
+                  870139b0    00000080     dm6437_vpfe.obj (.far)
+                  87013a30    00000058     dm6437_uart.obj (.far)
+                  87013a88    00000020     dm6437_gpio.obj (.far)
+                  87013aa8    00000018     camera.obj (.far)
+                  87013ac0    00000010     realplay.obj (.far)
+                  87013ad0    0000000c     rts64plus.lib : exit.obj (.far)
+                  87013adc    00000008     dm6437_mcbsp.obj (.far)
+                  87013ae4    00000008     rts64plus.lib : _lock.obj (.far)
+                  87013aec    00000008                   : memory.obj (.far)
+                  87013af4    00000004     --HOLE--
+                  87013af8    00000008                   : trgdrv.obj (.far)
+
+.stack     0    87013b00    00008000     UNINITIALIZED
+                  87013b00    00000008     rts64plus.lib : boot.obj (.stack)
+                  87013b08    00007ff8     --HOLE--
+
+.sysmem    0    8701bb00    00008000     UNINITIALIZED
+                  8701bb00    00000008     rts64plus.lib : memory.obj (.sysmem)
+                  8701bb08    00007ff8     --HOLE--
+
+.cinit     0    87023b00    00000b64     
+                  87023b00    0000050b     ov5640.obj (.cinit)
+                  8702400b    00000005     --HOLE-- [fill = 0]
+                  87024010    000001a7     ov2710.obj (.cinit)
+                  870241b7    00000001     --HOLE-- [fill = 0]
+                  870241b8    000000e1     dm6437_vpfe.obj (.cinit)
+                  87024299    00000007     --HOLE-- [fill = 0]
+                  870242a0    00000098     img_alg.obj (.cinit)
+                  87024338    0000005c     realplay.obj (.cinit)
+                  87024394    00000004     --HOLE-- [fill = 0]
+                  87024398    0000005c     rts64plus.lib : defs.obj (.cinit)
+                  870243f4    00000004     --HOLE-- [fill = 0]
+                  870243f8    0000005c                   : lowlev.obj (.cinit)
+                  87024454    00000004     --HOLE-- [fill = 0]
+                  87024458    00000058     dm6437_gpio.obj (.cinit)
+                  870244b0    00000049     isr.obj (.cinit)
+                  870244f9    00000007     --HOLE-- [fill = 0]
+                  87024500    00000030     camera.obj (.cinit)
+                  87024530    0000002c     rts64plus.lib : exit.obj (.cinit)
+                  8702455c    00000004     --HOLE-- [fill = 0]
+                  87024560    0000002c                   : memory.obj (.cinit)
+                  8702458c    00000004     --HOLE-- [fill = 0]
+                  87024590    0000001c     csl_davinciC64plus.lib : _csl_cache.o (.cinit)
+                  870245ac    00000004     --HOLE-- [fill = 0]
+                  870245b0    0000001c     dm6437_i2c.obj (.cinit)
+                  870245cc    00000004     --HOLE-- [fill = 0]
+                  870245d0    0000001c     rts64plus.lib : _lock.obj (.cinit)
+                  870245ec    00000004     --HOLE-- [fill = 0]
+                  870245f0    00000019     dm6437_vpbe.obj (.cinit)
+                  87024609    00000007     --HOLE-- [fill = 0]
+                  87024610    0000000c     dm6437_mcbsp.obj (.cinit)
+                  8702461c    00000004     --HOLE-- [fill = 0]
+                  87024620    0000000c     dm6437_psc.obj (.cinit)
+                  8702462c    00000004     --HOLE-- [fill = 0]
+                  87024630    0000000c     main.obj (.cinit)
+                  8702463c    00000004     --HOLE-- [fill = 0]
+                  87024640    0000000c     norflash_fs.obj (.cinit)
+                  8702464c    00000004     --HOLE-- [fill = 0]
+                  87024650    0000000c     rts64plus.lib : fopen.obj (.cinit)
+                  8702465c    00000004     --HOLE-- [fill = 0]
+                  87024660    00000004     (.pad.cinit) [fill = 0]
+
+.const     0    87024668    000005a8     
+                  87024668    00000240     dm6437_vpfe.obj (.const:.string:_cfa_coef)
+                  870248a8    00000101     rts64plus.lib : ctype.obj (.const:.string:__ctypes_)
+                  870249a9    00000002                   : fputs.obj (.const:.string)
+                  870249ab    00000001     --HOLE-- [fill = 0]
+                  870249ac    000000c4     tmd2771.obj (.const:.string)
+                  87024a70    000000a4     ov2710.obj (.const:.string)
+                  87024b14    0000007c     ov5640.obj (.const:.string)
+                  87024b90    00000028     wv511.obj (.const:.string)
+                  87024bb8    00000023     rts64plus.lib : _printfi.obj (.const:.string)
+                  87024bdb    00000001     --HOLE-- [fill = 0]
+                  87024bdc    00000010     camera.obj (.const:.string)
+                  87024bec    00000010     norflash_fs.obj (.const:.string)
+                  87024bfc    00000004     --HOLE-- [fill = 0]
+                  87024c00    00000008     dm6437_i2c.obj (.const:.string:_$P$T0$1)
+                  87024c08    00000008     rts64plus.lib : divd.obj (.const:.string:_initial_approx$1)
+
+.cio       0    87024c10    00000120     UNINITIALIZED
+                  87024c10    00000120     rts64plus.lib : trgmsg.obj (.cio)
+
+.bss       0    87024d30    00000094     UNINITIALIZED
+                  87024d30    00000020     realplay.obj (.bss)
+                  87024d50    0000001c     dm6437_edma3.obj (.bss)
+                  87024d6c    0000001c     img_alg.obj (.bss)
+                  87024d88    0000000a     isr.obj (.bss)
+                  87024d92    00000002     dm6437_vpbe.obj (.bss)
+                  87024d94    00000009     dm6437_vpfe.obj (.bss)
+                  87024d9d    00000003     --HOLE--
+                  87024da0    00000008     csl_davinciC64plus.lib : _csl_cache.o (.bss:cslsys_section:cache)
+                  87024da8    00000008     dm6437_i2c.obj (.bss)
+                  87024db0    00000004     camera.obj (.bss)
+                  87024db4    00000004     dm6437_mcbsp.obj (.bss)
+                  87024db8    00000004     dm6437_psc.obj (.bss)
+                  87024dbc    00000004     main.obj (.bss)
+                  87024dc0    00000004     norflash_fs.obj (.bss)
+
+.switch    0    87024dc4    00000090     
+                  87024dc4    00000038     csl_davinciC64plus.lib : csl_cacheWait.o (.switch)
+                  87024dfc    00000018     isr.obj (.switch:_Int_Uart1ISR)
+                  87024e14    00000010     dm6437_init.obj (.switch:__resetEMIF)
+                  87024e24    00000010     dm6437_init.obj (.switch:__setupEMIF)
+                  87024e34    00000010     ov2710.obj (.switch:_camera_ov2710_ctrl_power)
+                  87024e44    00000010     ov5640.obj (.switch:_camera_ov5640_ctrl_power)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+87024d30   $bss
+87024d30   .bss
+10800800   .data
+87000000   .text
+8700b600   C$$EXIT
+8700b2b8   C$$IO$$
+87001f60   _C64plusEdmaInit
+8700b640   _CACHE_enableCaching
+87001ee8   _CACHE_freezeL1
+87001ec0   _CACHE_freezeL1d
+87001e90   _CACHE_freezeL1p
+87001e08   _CACHE_invAllL1d
+87001d80   _CACHE_invAllL1p
+87003bf8   _CACHE_invAllL2
+87001ce0   _CACHE_invL1d
+87001c40   _CACHE_invL1p
+87003b58   _CACHE_invL2
+87001c10   _CACHE_setL1dSize
+87001be0   _CACHE_setL1pSize
+87003b14   _CACHE_setL2Mode
+87003ae0   _CACHE_setL2Size
+87001b78   _CACHE_unfreezeL1
+87001b4c   _CACHE_unfreezeL1d
+87001b20   _CACHE_unfreezeL1p
+87005310   _CACHE_wait
+87004fc0   _CACHE_waitInternal
+87001a88   _CACHE_wbAllL1d
+87003a48   _CACHE_wbAllL2
+870019f8   _CACHE_wbInvAllL1d
+870039b8   _CACHE_wbInvAllL2
+87001938   _CACHE_wbInvL1d
+870038f8   _CACHE_wbInvL2
+87001880   _CACHE_wbL1d
+87003840   _CACHE_wbL2
+87009620   _Cache_InitCache
+870096a0   _Cache_Invalid
+870096c4   _Cache_WriteBack
+870096e8   _Cache_WriteBackInvalid
+870023e8   _CloseTransferEdmaPaRam
+87002260   _DisableEdma
+87002400   _EDMA_init
+87008c00   _EVMDM6437_DDR_init
+8700852c   _EVMDM6437_GPIO_checkOutput
+870084c4   _EVMDM6437_GPIO_getInput
+870083a0   _EVMDM6437_GPIO_init
+870083b0   _EVMDM6437_GPIO_setDir
+87008444   _EVMDM6437_GPIO_setOutput
+87004c54   _EVMDM6437_I2C_close
+87004c20   _EVMDM6437_I2C_init
+87004e78   _EVMDM6437_I2C_loopback
+87004d78   _EVMDM6437_I2C_read
+87004c68   _EVMDM6437_I2C_reset
+87004c74   _EVMDM6437_I2C_write
+87006744   _EVMDM6437_PSC_changeState
+870066a4   _EVMDM6437_PSC_disableAll
+87006600   _EVMDM6437_PSC_enableAll
+8700acc0   _EVMDM6437_PWM1_Init
+8700acf0   _EVMDM6437_PWM1_Start
+87003c80   _EVMDM6437_enablePll1
+87003e64   _EVMDM6437_enablePll2
+87005390   _EVMDM6437_init
+87005340   _EVMDM6437_startupGEL
+8700220c   _EnableEdma
+87006de0   _GPIO_IntInit
+8700a400   _HOSTclose
+87009320   _HOSTlseek
+87009720   _HOSTopen
+87009d40   _HOSTread
+87008900   _HOSTrename
+87009e00   _HOSTunlink
+87009ec0   _HOSTwrite
+87002384   _InitTransferEdmaPaRam
+87000200   _Int_CcdcISR
+87000c18   _Int_Edma3ISR
+87000c74   _Int_GPIOBANK0ISR
+87000424   _Int_H3aISR
+87000a2c   _Int_HistISR
+87000cb8   _Int_PWM0ISR
+87000258   _Int_PreviewISR
+87000a34   _Int_ResizeISR
+87000c24   _Int_Timer0_34ISR
+87000c2c   _Int_Timer1_12ISR
+87000c34   _Int_Timer1_34ISR
+87000000   _Int_Uart1ISR
+87000a4c   _Int_VencISR
+87006e24   _Interrupt_init
+87001fac   _SetParamSetup2D
+870020a0   _SetParamSetup3D
+870022a8   _StartEdma
+87002494   _SwapEDMABuffer
+87002184   _UpdateSrcDstParam
+870021c0   _UpdateSrcDstParam_UYVY
+870022f0   _WaitEdma
+8700b0b0   __CACHE_wait
+87024c10   __CIOBUF_
+8700b060   __CSL_cacheApplyPatch
+87024da4   __CSL_cacheEmifState
+87024da0   __CSL_cachebusyState
+8701bb00   __STACK_END
+00008000   __STACK_SIZE
+00008000   __SYSMEM_SIZE
+00000001   __TI_args_main
+8700b0e0   ___TI_cpp_init
+87013ad8   ___TI_enable_exit_profile_output
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+ffffffff   ___binit__
+87024d30   ___bss__
+ffffffff   ___c_args__
+87023b00   ___cinit__
+10800800   ___data__
+10800800   ___edata__
+87024dc4   ___end__
+8700b680   ___etext__
+8700b380   ___isinf
+ffffffff   ___pinit__
+87000000   ___text__
+87007ba0   __addd
+8700b400   __args_main
+87009f80   __auto_init
+8700a100   __c6xabi_divu
+8700a4a0   __cleanup
+87013ad0   __cleanup_ptr
+87008ea0   __closefile
+87005424   __clrPinMux
+87009800   __cmpd
+870248a8   __ctypes_
+87002a80   __divd
+8700a540   __divli
+8700a100   __divu
+87008760   __divul
+87007060   __divull
+8700a1c0   __doflush
+87013ad4   __dtors_ptr
+8700ad60   __fixdi
+8700a720   __fixdli
+8700ade0   __fltlid
+87007da0   __frcaddd
+87009420   __frcmpyd
+8700b440   __frcmpyd_div
+870135e8   __ft_end
+870132c8   __ftable
+8700ae60   __llshl
+8700b480   __llshru
+87013ae4   __lock
+870072c0   __mpyd
+8700b4c0   __negd
+8700b580   __negll
+8700b5a0   __nop
+87002fc0   __printfi
+8700b500   __remli
+8700aee0   __renormd
+87005460   __resetEMIF
+870053e8   __setPinMux
+87005534   __setupEMIF
+870053a8   __setupPinMux
+87013b00   __stack
+8700b140   __subcull
+8700b540   __subd
+8701bb00   __sys_memory
+870134a8   __tmpnams
+87013ae8   __unlock
+87005624   __wait
+8700566c   __waitmsec
+87005650   __waitusec
+87009520   __wrt_ok
+8700b600   _abort
+870098e0   _atoi
+87012998   _avg_high_table
+87012a40   _avg_low_table
+8700b1a0   _c_int00
+87024db0   _camera_handle
+87013aa8   _camera_list
+870042b8   _camera_ov2710_ctrl_power
+87004430   _camera_ov2710_init
+8700466c   _camera_ov5640_ctrl_power
+87004804   _camera_ov5640_init
+87024668   _cfa_coef
+870099c0   _close
+87009cd0   _close_camera
+87024d40   _color_mode
+87012be8   _color_table_Cb
+87012ce8   _color_table_Cr
+87012ae8   _color_table_Y
+870014f8   _config_fliter_coeff
+8700a860   _copy_in
+87006e04   _disable_gpio13_int
+87024d34   _display_buf
+87006df0   _enable_gpio13_int
+87009cf4   _enter_camera_stby
+8700a280   _exit
+87009d18   _exit_camera_stby
+87024d84   _false_color_hist_trans
+87024d78   _false_color_trans
+87024d44   _flase_color_type
+10f0e000   _flase_color_type_table
+87007980   _fputc
+87004880   _fputs
+87006b60   _free
+870120b0   _free_file
+87009200   _fseek
+87001818   _get_resize_frame_buf
+870058e4   _get_vpbe_frame_buf
+87005998   _get_vpbe_free_buf
+87001294   _get_vpfe_frame_buf
+87001310   _get_vpfe_free_buf
+87024d80   _gray_color_hist_trans
+87024d74   _gray_color_trans
+870120f0   _gray_hist_table
+87024d8c   _h3a_af_value
+87024d90   _h3a_done_flag
+87024dc0   _h_sys_params
+87024da8   _i2c_inuse
+87024dac   _i2c_timeout
+10f04000   _image_slice0
+10f09000   _image_slice1
+87024d38   _image_src_buf
+87024d98   _in_size_extra_value
+8700ad0c   _lcd_init
+81a8c200   _lens_shading_buf
+8700a9a0   _lseek
+8700a340   _ltoa
+8700b2c0   _main
+87008a80   _malloc
+87024db4   _mcbsp0_handle
+87013adc   _mcbsp0_obj
+8700b200   _memccpy
+8700aa40   _memcpy
+87009aa0   _memset
+87009c60   _open_camera
+87024d48   _ostu_enable_flag
+87024d4c   _ostu_thrd_cnt
+870128f0   _otsu_thrd_table
+87024d54   _pEDMADstBuf0
+87024d58   _pEDMADstBuf1
+87024d5c   _pEDMADstBuf2
+87024d60   _pEDMADstBuf3
+87024d64   _pEDMASrcBuf0
+87024d68   _pEDMASrcBuf1
+87024d50   _pEdmaccRegs
+87024d8a   _preview_done_flag
+87009b80   _printf
+87007980   _putc
+8700af60   _readmsg
+8700b320   _realplay_process
+8700b620   _remove
+87024d9c   _resize_done_flag
+82000000   _resize_frame_buf
+87024d97   _resize_frame_buf_offset
+87024d3c   _resized_buf
+87024d91   _rf_test_flag
+87024d30   _scale_level
+87013ac0   _scale_rsz
+87001698   _set_resizer
+870059c0   _set_vpbe_frame_to_free
+87001334   _set_vpfe_frame_to_free
+870138b0   _setp_position_table
+870081a0   _setvbuf
+870017c0   _start_resize
+870120e0   _sys_params
+87024dbc   _sys_work_mode
+87024d7c   _true_color_hist_trans
+87024d70   _true_color_trans
+87013a48   _uart0_rx
+87013a68   _uart0_tx
+87013a58   _uart1_rx
+87013a78   _uart1_tx
+87013a30   _uart_obj0
+87013a3c   _uart_obj1
+87024d88   _uart_rx_buf_num
+8700afe0   _unlink
+870120c8   _used_file
+10800020   _vector1
+108001e0   _vector15
+10800040   _vector2
+10800060   _vector3
+10800080   _vector4
+10800000   _vectors
+83000000   _vpbe_frame_buf
+87024d92   _vpbe_frame_buf_offset
+87024d93   _vpbe_free_buf_offset
+87005808   _vpbe_init
+81384000   _vpfe_ae_out_buf
+87024d94   _vpfe_ae_out_buf_offset
+81000000   _vpfe_af_out_buf
+80e10000   _vpfe_ccdc_buf
+87024d89   _vpfe_ccdc_buf_offset
+87000ce0   _vpfe_ccdc_raw
+81a8c000   _vpfe_fpc_buf
+80000000   _vpfe_frame_buf
+87024d95   _vpfe_frame_buf_offset
+87024d96   _vpfe_free_buf_offset
+87001060   _vpfe_h3a_init
+870011cc   _vpfe_init
+87000e30   _vpfe_preview_init
+87001610   _vpfe_resizer_init
+870017d8   _wait_resize
+8700ac20   _write
+8700b260   _writemsg
+87013898   _wv511_ctrl
+ffffffff   binit
+87023b00   cinit
+10800800   edata
+87024dc4   end
+8700b680   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00008000   __STACK_SIZE
+00008000   __SYSMEM_SIZE
+10800000   _vectors
+10800020   _vector1
+10800040   _vector2
+10800060   _vector3
+10800080   _vector4
+108001e0   _vector15
+10800800   .data
+10800800   ___data__
+10800800   ___edata__
+10800800   edata
+10f04000   _image_slice0
+10f09000   _image_slice1
+10f0e000   _flase_color_type_table
+80000000   _vpfe_frame_buf
+80e10000   _vpfe_ccdc_buf
+81000000   _vpfe_af_out_buf
+81384000   _vpfe_ae_out_buf
+81a8c000   _vpfe_fpc_buf
+81a8c200   _lens_shading_buf
+82000000   _resize_frame_buf
+83000000   _vpbe_frame_buf
+87000000   .text
+87000000   _Int_Uart1ISR
+87000000   ___text__
+87000200   _Int_CcdcISR
+87000258   _Int_PreviewISR
+87000424   _Int_H3aISR
+87000a2c   _Int_HistISR
+87000a34   _Int_ResizeISR
+87000a4c   _Int_VencISR
+87000c18   _Int_Edma3ISR
+87000c24   _Int_Timer0_34ISR
+87000c2c   _Int_Timer1_12ISR
+87000c34   _Int_Timer1_34ISR
+87000c74   _Int_GPIOBANK0ISR
+87000cb8   _Int_PWM0ISR
+87000ce0   _vpfe_ccdc_raw
+87000e30   _vpfe_preview_init
+87001060   _vpfe_h3a_init
+870011cc   _vpfe_init
+87001294   _get_vpfe_frame_buf
+87001310   _get_vpfe_free_buf
+87001334   _set_vpfe_frame_to_free
+870014f8   _config_fliter_coeff
+87001610   _vpfe_resizer_init
+87001698   _set_resizer
+870017c0   _start_resize
+870017d8   _wait_resize
+87001818   _get_resize_frame_buf
+87001880   _CACHE_wbL1d
+87001938   _CACHE_wbInvL1d
+870019f8   _CACHE_wbInvAllL1d
+87001a88   _CACHE_wbAllL1d
+87001b20   _CACHE_unfreezeL1p
+87001b4c   _CACHE_unfreezeL1d
+87001b78   _CACHE_unfreezeL1
+87001be0   _CACHE_setL1pSize
+87001c10   _CACHE_setL1dSize
+87001c40   _CACHE_invL1p
+87001ce0   _CACHE_invL1d
+87001d80   _CACHE_invAllL1p
+87001e08   _CACHE_invAllL1d
+87001e90   _CACHE_freezeL1p
+87001ec0   _CACHE_freezeL1d
+87001ee8   _CACHE_freezeL1
+87001f60   _C64plusEdmaInit
+87001fac   _SetParamSetup2D
+870020a0   _SetParamSetup3D
+87002184   _UpdateSrcDstParam
+870021c0   _UpdateSrcDstParam_UYVY
+8700220c   _EnableEdma
+87002260   _DisableEdma
+870022a8   _StartEdma
+870022f0   _WaitEdma
+87002384   _InitTransferEdmaPaRam
+870023e8   _CloseTransferEdmaPaRam
+87002400   _EDMA_init
+87002494   _SwapEDMABuffer
+87002a80   __divd
+87002fc0   __printfi
+87003840   _CACHE_wbL2
+870038f8   _CACHE_wbInvL2
+870039b8   _CACHE_wbInvAllL2
+87003a48   _CACHE_wbAllL2
+87003ae0   _CACHE_setL2Size
+87003b14   _CACHE_setL2Mode
+87003b58   _CACHE_invL2
+87003bf8   _CACHE_invAllL2
+87003c80   _EVMDM6437_enablePll1
+87003e64   _EVMDM6437_enablePll2
+870042b8   _camera_ov2710_ctrl_power
+87004430   _camera_ov2710_init
+8700466c   _camera_ov5640_ctrl_power
+87004804   _camera_ov5640_init
+87004880   _fputs
+87004c20   _EVMDM6437_I2C_init
+87004c54   _EVMDM6437_I2C_close
+87004c68   _EVMDM6437_I2C_reset
+87004c74   _EVMDM6437_I2C_write
+87004d78   _EVMDM6437_I2C_read
+87004e78   _EVMDM6437_I2C_loopback
+87004fc0   _CACHE_waitInternal
+87005310   _CACHE_wait
+87005340   _EVMDM6437_startupGEL
+87005390   _EVMDM6437_init
+870053a8   __setupPinMux
+870053e8   __setPinMux
+87005424   __clrPinMux
+87005460   __resetEMIF
+87005534   __setupEMIF
+87005624   __wait
+87005650   __waitusec
+8700566c   __waitmsec
+87005808   _vpbe_init
+870058e4   _get_vpbe_frame_buf
+87005998   _get_vpbe_free_buf
+870059c0   _set_vpbe_frame_to_free
+87006600   _EVMDM6437_PSC_enableAll
+870066a4   _EVMDM6437_PSC_disableAll
+87006744   _EVMDM6437_PSC_changeState
+87006b60   _free
+87006de0   _GPIO_IntInit
+87006df0   _enable_gpio13_int
+87006e04   _disable_gpio13_int
+87006e24   _Interrupt_init
+87007060   __divull
+870072c0   __mpyd
+87007980   _fputc
+87007980   _putc
+87007ba0   __addd
+87007da0   __frcaddd
+870081a0   _setvbuf
+870083a0   _EVMDM6437_GPIO_init
+870083b0   _EVMDM6437_GPIO_setDir
+87008444   _EVMDM6437_GPIO_setOutput
+870084c4   _EVMDM6437_GPIO_getInput
+8700852c   _EVMDM6437_GPIO_checkOutput
+87008760   __divul
+87008900   _HOSTrename
+87008a80   _malloc
+87008c00   _EVMDM6437_DDR_init
+87008ea0   __closefile
+87009200   _fseek
+87009320   _HOSTlseek
+87009420   __frcmpyd
+87009520   __wrt_ok
+87009620   _Cache_InitCache
+870096a0   _Cache_Invalid
+870096c4   _Cache_WriteBack
+870096e8   _Cache_WriteBackInvalid
+87009720   _HOSTopen
+87009800   __cmpd
+870098e0   _atoi
+870099c0   _close
+87009aa0   _memset
+87009b80   _printf
+87009c60   _open_camera
+87009cd0   _close_camera
+87009cf4   _enter_camera_stby
+87009d18   _exit_camera_stby
+87009d40   _HOSTread
+87009e00   _HOSTunlink
+87009ec0   _HOSTwrite
+87009f80   __auto_init
+8700a100   __c6xabi_divu
+8700a100   __divu
+8700a1c0   __doflush
+8700a280   _exit
+8700a340   _ltoa
+8700a400   _HOSTclose
+8700a4a0   __cleanup
+8700a540   __divli
+8700a720   __fixdli
+8700a860   _copy_in
+8700a9a0   _lseek
+8700aa40   _memcpy
+8700ac20   _write
+8700acc0   _EVMDM6437_PWM1_Init
+8700acf0   _EVMDM6437_PWM1_Start
+8700ad0c   _lcd_init
+8700ad60   __fixdi
+8700ade0   __fltlid
+8700ae60   __llshl
+8700aee0   __renormd
+8700af60   _readmsg
+8700afe0   _unlink
+8700b060   __CSL_cacheApplyPatch
+8700b0b0   __CACHE_wait
+8700b0e0   ___TI_cpp_init
+8700b140   __subcull
+8700b1a0   _c_int00
+8700b200   _memccpy
+8700b260   _writemsg
+8700b2b8   C$$IO$$
+8700b2c0   _main
+8700b320   _realplay_process
+8700b380   ___isinf
+8700b400   __args_main
+8700b440   __frcmpyd_div
+8700b480   __llshru
+8700b4c0   __negd
+8700b500   __remli
+8700b540   __subd
+8700b580   __negll
+8700b5a0   __nop
+8700b600   C$$EXIT
+8700b600   _abort
+8700b620   _remove
+8700b640   _CACHE_enableCaching
+8700b680   ___etext__
+8700b680   etext
+870120b0   _free_file
+870120c8   _used_file
+870120e0   _sys_params
+870120f0   _gray_hist_table
+870128f0   _otsu_thrd_table
+87012998   _avg_high_table
+87012a40   _avg_low_table
+87012ae8   _color_table_Y
+87012be8   _color_table_Cb
+87012ce8   _color_table_Cr
+870132c8   __ftable
+870134a8   __tmpnams
+870135e8   __ft_end
+87013898   _wv511_ctrl
+870138b0   _setp_position_table
+87013a30   _uart_obj0
+87013a3c   _uart_obj1
+87013a48   _uart0_rx
+87013a58   _uart1_rx
+87013a68   _uart0_tx
+87013a78   _uart1_tx
+87013aa8   _camera_list
+87013ac0   _scale_rsz
+87013ad0   __cleanup_ptr
+87013ad4   __dtors_ptr
+87013ad8   ___TI_enable_exit_profile_output
+87013adc   _mcbsp0_obj
+87013ae4   __lock
+87013ae8   __unlock
+87013b00   __stack
+8701bb00   __STACK_END
+8701bb00   __sys_memory
+87023b00   ___cinit__
+87023b00   cinit
+87024668   _cfa_coef
+870248a8   __ctypes_
+87024c10   __CIOBUF_
+87024d30   $bss
+87024d30   .bss
+87024d30   ___bss__
+87024d30   _scale_level
+87024d34   _display_buf
+87024d38   _image_src_buf
+87024d3c   _resized_buf
+87024d40   _color_mode
+87024d44   _flase_color_type
+87024d48   _ostu_enable_flag
+87024d4c   _ostu_thrd_cnt
+87024d50   _pEdmaccRegs
+87024d54   _pEDMADstBuf0
+87024d58   _pEDMADstBuf1
+87024d5c   _pEDMADstBuf2
+87024d60   _pEDMADstBuf3
+87024d64   _pEDMASrcBuf0
+87024d68   _pEDMASrcBuf1
+87024d70   _true_color_trans
+87024d74   _gray_color_trans
+87024d78   _false_color_trans
+87024d7c   _true_color_hist_trans
+87024d80   _gray_color_hist_trans
+87024d84   _false_color_hist_trans
+87024d88   _uart_rx_buf_num
+87024d89   _vpfe_ccdc_buf_offset
+87024d8a   _preview_done_flag
+87024d8c   _h3a_af_value
+87024d90   _h3a_done_flag
+87024d91   _rf_test_flag
+87024d92   _vpbe_frame_buf_offset
+87024d93   _vpbe_free_buf_offset
+87024d94   _vpfe_ae_out_buf_offset
+87024d95   _vpfe_frame_buf_offset
+87024d96   _vpfe_free_buf_offset
+87024d97   _resize_frame_buf_offset
+87024d98   _in_size_extra_value
+87024d9c   _resize_done_flag
+87024da0   __CSL_cachebusyState
+87024da4   __CSL_cacheEmifState
+87024da8   _i2c_inuse
+87024dac   _i2c_timeout
+87024db0   _camera_handle
+87024db4   _mcbsp0_handle
+87024dbc   _sys_work_mode
+87024dc0   _h_sys_params
+87024dc4   ___end__
+87024dc4   end
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[307 symbols]

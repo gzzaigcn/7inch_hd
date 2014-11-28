@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2014-09-03T08:15:57.279546Z"
+   url="svn://192.168.1.217/hd_project/lib"
+   last-author="gzz"
+   kind="dir"
+   revision="8"/>
+<entry
+   committed-rev="2"
+   name="dmjpge_tigem.l64P"
+   text-time="2010-03-18T03:12:04.000000Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="e352c2dbd4e24aee85a166f7a8ecaa77"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:15:53.385177Z"/>
+<entry
+   committed-rev="2"
+   name="jpegdec_ti.l64P"
+   text-time="2011-03-25T13:19:36.000000Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="7df4e55318bd103e321e2fa5d565b9f2"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:15:53.560187Z"/>
+<entry
+   committed-rev="2"
+   name="csl_davinciC64plus.lib"
+   text-time="2011-12-01T04:39:03.015625Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="309bff4cbecf96b07292e2ce947b8928"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:15:53.340175Z"/>
+<entry
+   committed-rev="2"
+   name="SEED_DEC6437Bsl.lib"
+   text-time="2011-12-01T04:39:03.468750Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="700c4b5aedf153ed23223f0ab6e3b37e"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:15:53.606190Z"/>
+<entry
+   committed-rev="2"
+   name="csl_sysservicesdavinci.lib"
+   text-time="2011-12-01T04:39:03.125000Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="b224089b5653a044cf5e7401d390c886"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:15:53.375177Z"/>
+<entry
+   committed-rev="2"
+   name="TOPV_scaler.lib"
+   text-time="2011-12-01T04:38:56.343750Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="c50f1f779cb9da6d832cb76c5b4318f2"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:15:53.618191Z"/>
+<entry
+   committed-rev="2"
+   name="IQmath_c64x+.lib"
+   text-time="2008-02-06T19:06:30.000000Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="6d7b172d836ce3f2fc70dde87f01889d"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:15:53.493184Z"/>
+<entry
+   committed-rev="2"
+   name="dspcsl_davinci.lib"
+   text-time="2011-12-01T04:39:03.140625Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="17b6f4360bd4062279d12731fb26a3bb"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:15:53.396178Z"/>
+<entry
+   committed-rev="2"
+   name="IQmath_ROM_c643x.lib"
+   text-time="2008-02-06T19:06:30.000000Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="03854ac8861f47a69dbb6bebda0d0e6e"
+   last-author="gzz"
+   kind="file"
+   prop-time="2014-09-03T08:15:53.524185Z"/>
+</wc-entries>

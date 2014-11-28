@@ -1,0 +1,41 @@
+ .sect "L3_PROGRAM"
+
+ .global _CalBlockGray_sa
+
+_CalBlockGray_sa: .cproc pInBuf, Blk_w, Blk_h, Stride
+  .reg inbuf, loop_i, loop_j
+  .reg sum
+  .reg Y0, Y1, INT01
+  .reg MASK
+  .reg gray
+
+  ZERO sum;
+  MVKL 0xff, MASK
+  MV pInBuf, inbuf
+  SUB Blk_h, 0x01, loop_j
+
+Loop1:
+  SHR Blk_w, 0x01, loop_i
+  SUB loop_i, 0x01, loop_i
+
+Loop0:
+  LDW *inbuf++, INT01
+  SHR INT01, 0x08, Y0
+  SHR INT01, 0x18, Y1
+  AND Y0, MASK, Y0
+  AND Y1, MASK, Y1
+  ADD Y0, sum, sum
+  ADD Y1, sum, sum
+
+[loop_i]BDEC Loop0, loop_i ; if(loop_i != 0) loop_i--, goto Loop1
+  ADD pInBuf, Stride, pInBuf
+  MV pInBuf, inbuf
+[loop_j]BDEC Loop1, loop_j
+
+ .return sum
+
+ .endproc
+
+
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configurations XML_version="1.2" id="configurations_0">
+    
+<configuration XML_version="1.2" id="SEED XDS560V2 USB Emulator_0">
+        <instance XML_version="1.2" desc="SEED XDS560V2 USB Emulator_0" href="connections/SEEDXDS560V2USB_Connection.xml" id="SEED XDS560V2 USB Emulator_0" xml="SEEDXDS560V2USB_Connection.xml" xmlpath="connections"/>
+        <connection XML_version="1.2" id="SEED XDS560V2 USB Emulator_0">
+            <instance XML_version="1.2" href="drivers/tixds560icepick_c.xml" id="drivers" xml="tixds560icepick_c.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds560c64xp.xml" id="drivers" xml="tixds560c64xp.xml" xmlpath="drivers"/>
+            <platform XML_version="1.2" id="platform_0">
+                <instance XML_version="1.2" desc="TMS320DM6437_0" href="devices/dm6437.xml" id="TMS320DM6437_0" xml="dm6437.xml" xmlpath="devices"/>
+                <device HW_revision="1" XML_version="1.2" description="DaVinci DM643x - C64x+ Fixed-point DSP" id="TMS320DM6437_0" partnum="TMS320DM6437" simulation="no">
+                    <router HW_revision="1.0" XML_version="1.2" description="ICEPick_C Router" id="IcePick_C_0" isa="ICEPICK_C">
+                        <subpath id="Subpath_0">
+                            <cpu HW_revision="1.0" XML_version="1.2" description="C64X+ CPU" deviceSim="false" id="C64XP_0" isa="TMS320C64XP">
+                                <property Type="filepathfield" Value="..\..\..\GEL\7inch_hd_dm6437.gel" id="GEL File"/>
+                            </cpu>
+                        </subpath>
+                    </router>
+                </device>
+            </platform>
+        </connection>
+    </configuration>
+</configurations>

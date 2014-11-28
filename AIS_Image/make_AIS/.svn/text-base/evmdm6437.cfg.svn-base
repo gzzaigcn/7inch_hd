@@ -1,0 +1,23 @@
+0x5853590D  #Function Execute Command
+0x00030000  #   Selects PLL configuration function, with 3 arguments
+0x00000015  #   PLLM value
+0x00000000  #   PLLDIV 0
+0x00000000  #   Clock source
+0x5853590D  #Function Execute Command
+0x00050001  #   Selects EMIFA configuration, with 5 arguments
+0x3FFFFFFC  #   AB1CR control register mask
+0x3FFFFFFC  #   AB2CR control register mask
+0x3FFFFFFC  #   AB3CR control register mask
+0x3FFFFFFC  #   AB4CR control register mask
+0x00000000  #   NANDFCR control register mask
+0x5853590D  #Function Execute Command
+0x00090002  #   Selects DDR memory configuration, with 9 arguments
+0x00000017  #   DDR PLLM
+0x00000001  #   PLL SRC
+0x0000000B  #   DDR CLLK DIV
+0x00000000  #   VBPE CLK DIV
+0x50006405  #   DDR Control register mask
+0x00138822  #   SDRAM Config register mask
+0x16492148  #   SDRAM Timer 0 register mask
+0x000CC702  #   SDRAM Timer 1 register mask
+0x000004EF  #   SDRAM Refresh control register mask

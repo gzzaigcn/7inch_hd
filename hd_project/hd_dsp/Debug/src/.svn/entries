@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="7"
+   name=""
+   committed-date="2014-09-03T15:45:10.093210Z"
+   url="svn://192.168.1.217/hd_project/hd_project/hd_dsp/Debug/src"
+   last-author="gzz"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="8"/>
+<entry
+   name="app"
+   kind="dir"/>
+<entry
+   name="alg"
+   kind="dir"/>
+<entry
+   committed-rev="16"
+   name="subdir_rules.mk"
+   text-time="2014-11-10T02:58:53.005451Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="235157e98b406777dd273738e6c49959"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="subdir_vars.mk"
+   text-time="2014-11-10T02:58:52.960449Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="f3e1eb44cf40ae1dc5d5d5e28b84516c"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   name="drivers"
+   kind="dir"/>
+</wc-entries>

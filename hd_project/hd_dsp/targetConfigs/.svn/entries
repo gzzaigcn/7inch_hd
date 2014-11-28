@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2014-09-03T08:15:57.279546Z"
+   url="svn://192.168.1.217/hd_project/hd_project/hd_dsp/targetConfigs"
+   last-author="gzz"
+   kind="dir"
+   revision="8"/>
+<entry
+   committed-rev="2"
+   name="Dm6437Configuration.ccxml"
+   text-time="2014-09-03T07:42:08.744375Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="39e7a4018b1f8f9b22fc83a870098df7"
+   last-author="gzz"
+   kind="file"/>
+</wc-entries>

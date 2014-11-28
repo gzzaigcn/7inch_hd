@@ -1,0 +1,80 @@
+ .sect "L3_PROGRAM"
+ 
+ .global _ContrastBrightSaturationTable_sa
+
+_ContrastBrightSaturationTable_sa: .cproc  pOutBuf, pInBuf, DstStride, SrcStride, Width, Height, LUTable, SATTable
+  .reg  IN_32:IN_10, OUT_32:OUT_10, loop_i, loop_j, IN_Stride, OUT_Stride
+  .reg  Val_Y0, Val_Y1, Val_Y2, Val_Y3, Val_Cb0, Val_Cr0, Val_Cb1, Val_Cr1
+  .reg  Idx_Y0, Idx_Y1, Idx_Y2, Idx_Y3, Idx_Cb0, Idx_Cr0, Idx_Cb1, Idx_Cr1
+  .reg  LUT_Y0, LUT_Y1, LUT_Y2, LUT_Y3, LUT_Y1Y0, LUT_Y3Y2
+  .reg  LUT_Cb0, LUT_Cr0, LUT_Cb1, LUT_Cr1, LUT_Cr0Cb0, LUT_Cr1Cb1
+  .reg  OUT_Y1Y0, OUT_Y3Y2 
+  .reg  Width2, Mask, Mask_c, Mask2, Mask2_c
+  .reg  LUTable1, LUTable2, LUTable3, SATTable1, SATTable2, SATTable3
+    
+  SHL     Width,     0x1,      Width2
+  SUB     SrcStride, Width2,   IN_Stride  
+  SUB     DstStride, Width2,   OUT_Stride  
+  SUB     Height,    0x1,      loop_j
+  SHR     Width,     0x2,      Width
+  MVK     0xff,      Mask  
+  MVK     0xff,      Mask_c
+  PACK2   Mask,      Mask,     Mask2
+  PACK2   Mask_c,    Mask_c,   Mask2_c       
+  MV      LUTable,   LUTable1
+  MV      LUTable,   LUTable2
+  MV      LUTable,   LUTable3
+  MV      SATTable,  SATTable1
+  MV      SATTable,  SATTable2
+  MV      SATTable,  SATTable3
+
+ContrastBrightSaturationTLoop1:
+  SUB     Width,  0x1,      loop_i   
+
+ContrastBrightSaturationTLoop0: .trip   4
+  LDNDW    *pInBuf++, IN_32:IN_10  ;8字节访问，并自动+8
+  SHR     IN_10,     0x8,   Val_Y0 
+  SHR     IN_10,     0x10,  Val_Cr0 
+  SHR     IN_10,     0x18,  Val_Y1
+  SHR     IN_32,     0x8,   Val_Y2 
+  SHR     IN_32,     0x10,  Val_Cr1 
+  SHR     IN_32,     0x18,  Val_Y3 
+
+  AND     Val_Y0,    Mask,    Idx_Y0
+  AND     Val_Y1,    Mask,    Idx_Y1
+  AND     IN_10,     Mask,    Idx_Cb0
+  AND     Val_Cr0,   Mask,    Idx_Cr0
+  AND     Val_Y2,    Mask_c,  Idx_Y2
+  AND     Val_Y3,    Mask_c,  Idx_Y3
+  AND     IN_32,     Mask_c,  Idx_Cb1
+  AND     Val_Cr1,   Mask_c,  Idx_Cr1
+
+  LDBU    *+LUTable[Idx_Y0],   LUT_Y0
+  LDBU    *+LUTable1[Idx_Y1],  LUT_Y1
+  LDBU    *+LUTable2[Idx_Y2],  LUT_Y2
+  LDBU    *+LUTable3[Idx_Y3],  LUT_Y3
+  LDBU    *+SATTable[Idx_Cb0],   LUT_Cb0
+  LDBU    *+SATTable1[Idx_Cr0],  LUT_Cr0
+  LDBU    *+SATTable2[Idx_Cb1],  LUT_Cb1
+  LDBU    *+SATTable3[Idx_Cr1],  LUT_Cr1
+  
+  PACKL4  LUT_Y1,    LUT_Y0,   LUT_Y1Y0  
+  PACKL4  LUT_Y3,    LUT_Y2,   LUT_Y3Y2  
+  PACKL4  LUT_Cr0,   LUT_Cb0,  LUT_Cr0Cb0  
+  PACKL4  LUT_Cr1,   LUT_Cb1,  LUT_Cr1Cb1  
+
+  SHL     LUT_Y1Y0,  0x8,      OUT_Y1Y0            
+  SHL     LUT_Y3Y2,  0x8,      OUT_Y3Y2   
+
+  OR      OUT_Y1Y0,  LUT_Cr0Cb0,   OUT_10;生成一个新的数据
+  OR      OUT_Y3Y2,  LUT_Cr1Cb1,   OUT_32 
+
+  STNDW    OUT_32:OUT_10,   *pOutBuf++;输出
+  [loop_i]BDEC    ContrastBrightSaturationTLoop0,  loop_i  
+
+  ADD     pInBuf, IN_Stride,     pInBuf   
+  ADD     pOutBuf, OUT_Stride,   pOutBuf
+  [loop_j]BDEC    ContrastBrightSaturationTLoop1,  loop_j
+
+      
+ .endproc

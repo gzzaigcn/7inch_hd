@@ -1,0 +1,46 @@
+ .sect "L3_PROGRAM"
+ 
+ .global _ImageCopy_sa
+
+_ImageCopy_sa: .cproc  pOutBuf, pInBuf, SrcWidth, DstWidth, Width, Height
+  .no_mdep 
+  .reg  IN_32:IN_10, IN_32b:IN_10b, loop_i, loop_j, IN_Stride, OUT_Stride, InStep, OutStep, Width2, LP0_Cnt
+  .reg  InBufA, OutBufA
+  .reg  InBufB, OutBufB
+      
+  SHL   SrcWidth,  0x1,       InStep ;//左移一位
+  SHL   DstWidth,  0x1,       OutStep 
+  MV    pInBuf,    InBufA
+  MV    pOutBuf,   OutBufA
+  ADD   pInBuf,    InStep,    InBufB
+  ADD   pOutBuf,   OutStep,   OutBufB
+
+  SHL   Width,     0x1,       Width2
+  SUB   InStep,    Width2,    IN_Stride  
+  ADD   IN_Stride, InStep,    IN_Stride 
+  SUB   OutStep,   Width2,    OUT_Stride
+  ADD   OUT_Stride, OutStep,  OUT_Stride 
+
+  SHR   Width,     0x2,       LP0_Cnt
+  SHR   Height,    0x1,       loop_j
+  SUB   loop_j,    0x1,       loop_j
+
+ImageCopyLP1:
+  SUB   LP0_Cnt,   0x1,       loop_i
+
+ImageCopyLP0:  .trip   4    ;.trip循环次数
+  LDDW  *InBufA++, IN_32:IN_10
+  LDDW  *InBufB++, IN_32b:IN_10b
+  STDW  IN_32:IN_10,   *OutBufA++
+  STDW  IN_32b:IN_10b, *OutBufB++ ;双字操作
+  [loop_i]BDEC    ImageCopyLP0,  loop_i 
+
+  ADD    InBufA,  IN_Stride,    InBufA 
+  ADD    InBufB,  IN_Stride,    InBufB  
+  ADD    OutBufA, OUT_Stride,   OutBufA
+  ADD    OutBufB, OUT_Stride,   OutBufB
+  [loop_j]BDEC    ImageCopyLP1, loop_j 
+   
+  
+
+ .endproc

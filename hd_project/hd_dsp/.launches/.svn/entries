@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="16"
+   name=""
+   committed-date="2014-11-10T08:14:54.480337Z"
+   url="svn://192.168.1.217/hd_project/hd_project/hd_dsp/.launches"
+   last-author="gzz"
+   kind="dir"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="hd_dsp.launch"
+   text-time="2014-10-31T07:32:06.600982Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="1c9afc7d3153778eac6fcecfd17ff84e"
+   last-author="gzz"
+   kind="file"/>
+</wc-entries>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="6"
+   name=""
+   committed-date="2013-07-02T14:21:27.485337Z"
+   url="svn://192.168.1.220/gzz/make_AIS"
+   last-author="gzz"
+   kind="dir"
+   revision="6"/>
+<entry
+   committed-rev="6"
+   name="genAIS.pl"
+   text-time="2011-12-01T04:39:01.484375Z"
+   committed-date="2013-07-02T14:21:27.485337Z"
+   checksum="2ef97bc5aa2f05681dbac40644fcb359"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="6"
+   name="app_ais.bin"
+   text-time="2013-07-02T06:00:43.103822Z"
+   committed-date="2013-07-02T14:21:27.485337Z"
+   checksum="645b22309e96f98c5c84feb09b8e5aa9"
+   last-author="gzz"
+   kind="file"
+   prop-time="2013-07-02T06:21:57.691724Z"/>
+<entry
+   committed-rev="6"
+   name="combineAIS.pl"
+   text-time="2009-10-05T12:07:16.000000Z"
+   committed-date="2013-07-02T14:21:27.485337Z"
+   checksum="ce2df5f64b38edae6b5cfc858bad0eb2"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="6"
+   name="ofd6x.exe"
+   text-time="2011-12-01T04:39:01.531250Z"
+   committed-date="2013-07-02T14:21:27.485337Z"
+   checksum="3dfae812992afe5643b75fe73a91a194"
+   last-author="gzz"
+   kind="file"
+   prop-time="2013-07-02T06:21:57.746727Z"/>
+<entry
+   committed-rev="6"
+   name="test.bin"
+   text-time="2009-11-23T10:00:58.000000Z"
+   committed-date="2013-07-02T14:21:27.485337Z"
+   checksum="14c71a6271398c7cc47c6100c4ec7a8c"
+   last-author="gzz"
+   kind="file"
+   prop-time="2013-07-02T06:21:57.772728Z"/>
+<entry
+   committed-rev="6"
+   name="evmdm6437.cfg"
+   text-time="2013-07-02T03:16:59.749958Z"
+   committed-date="2013-07-02T14:21:27.485337Z"
+   checksum="fd170dd331aaac3e73ca73436befdd14"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="6"
+   name="led.out"
+   text-time="2013-05-29T01:08:40.151452Z"
+   committed-date="2013-07-02T14:21:27.485337Z"
+   checksum="8e8e79ad61a59f1ee78aef778b59fc3d"
+   last-author="gzz"
+   kind="file"
+   prop-time="2013-07-02T06:21:57.736726Z"/>
+<entry
+   committed-rev="6"
+   name="genAIS_app.bat"
+   text-time="2013-07-02T06:00:36.524445Z"
+   committed-date="2013-07-02T14:21:27.485337Z"
+   checksum="1eadd5d72b32241919625018d0f53c6b"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="6"
+   name="led.bin"
+   text-time="2013-07-02T06:00:39.903638Z"
+   committed-date="2013-07-02T14:21:27.485337Z"
+   checksum="c2f4b7ed58282774922700862f4c881f"
+   last-author="gzz"
+   kind="file"
+   prop-time="2013-07-02T06:21:57.729726Z"/>
+<entry
+   committed-rev="6"
+   name="SPI_secondary_boot.out"
+   text-time="2013-06-29T07:52:28.834155Z"
+   committed-date="2013-07-02T14:21:27.485337Z"
+   checksum="8a8230fac6234d8d7b5bcb7941ec580a"
+   last-author="gzz"
+   kind="file"
+   prop-time="2013-07-02T06:21:57.763728Z"/>
+<entry
+   committed-rev="6"
+   name="SPI_secondary_boot.bin"
+   text-time="2013-07-02T06:00:14.383179Z"
+   committed-date="2013-07-02T14:21:27.485337Z"
+   checksum="b85160944839b5965af21321199748f4"
+   last-author="gzz"
+   kind="file"
+   prop-time="2013-07-02T06:21:57.754727Z"/>
+<entry
+   committed-rev="6"
+   name="combineAIS.bat"
+   text-time="2013-07-02T03:26:17.430855Z"
+   committed-date="2013-07-02T14:21:27.485337Z"
+   checksum="7c901c4e33cd34bd28a3f56826dc140a"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="6"
+   name="genAIS_boot.bat"
+   text-time="2013-07-02T06:00:10.458954Z"
+   committed-date="2013-07-02T14:21:27.485337Z"
+   checksum="da130fe7421c92cb6d8ff08b2da07767"
+   last-author="gzz"
+   kind="file"/>
+</wc-entries>

@@ -1,0 +1,2 @@
+C:\Perl\bin\perl.exe genAIS.pl -otype bin -i led.out -o led.bin -bootmode raw
+pause

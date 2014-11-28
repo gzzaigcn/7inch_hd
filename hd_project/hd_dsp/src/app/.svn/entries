@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2014-09-03T08:15:57.279546Z"
+   url="svn://192.168.1.217/hd_project/hd_project/hd_dsp/src/app"
+   last-author="gzz"
+   kind="dir"
+   revision="8"/>
+</wc-entries>

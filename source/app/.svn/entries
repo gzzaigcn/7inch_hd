@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="12"
+   name=""
+   committed-date="2014-10-08T15:26:57.811968Z"
+   url="svn://192.168.1.217/hd_project/source/app"
+   last-author="gzz"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="12"/>
+<entry
+   committed-rev="11"
+   name="pmu.c"
+   text-time="2014-09-23T02:42:59.354633Z"
+   committed-date="2014-09-23T15:57:10.850077Z"
+   checksum="5e3629faaf44845a5f015e8815b6b2c7"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="main.c"
+   text-time="2014-11-10T08:12:59.362401Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="fd67c4760a3c9609683474fecd694b95"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="norflash_fs.c"
+   text-time="2014-10-20T04:20:35.059469Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="40f3d1be592f44945371405208709387"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="12"
+   name="linker.cmd"
+   text-time="2014-09-24T13:36:58.515593Z"
+   committed-date="2014-10-08T15:26:57.811968Z"
+   checksum="68bcf580ae8e8c47c4401e256f01787a"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="11"
+   name="osd.c"
+   text-time="2014-09-19T07:02:39.565075Z"
+   committed-date="2014-09-23T15:57:10.850077Z"
+   checksum="81051bcc2cf1bedf378224b0a93e2877"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="12"
+   name="playback.c"
+   text-time="2014-09-28T06:10:01.403043Z"
+   committed-date="2014-10-08T15:26:57.811968Z"
+   checksum="05a26e5b8ecf42dca4e0436b390b5524"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="camera.c"
+   text-time="2014-10-22T08:01:57.905887Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="2065effbcb456561c372a54ff5390c90"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="16"
+   name="realplay.c"
+   text-time="2014-11-10T05:16:23.743366Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="d5c2b213c01b095533b248f568c7cbb8"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+</wc-entries>

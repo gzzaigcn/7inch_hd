@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="12"
+   name=""
+   committed-date="2014-10-08T15:26:57.811968Z"
+   url="svn://192.168.1.217/hd_project/source/algorithm"
+   last-author="gzz"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="12"/>
+<entry
+   committed-rev="12"
+   name="ColorTransStatTable_sa.sa"
+   text-time="2012-11-07T03:41:31.062500Z"
+   committed-date="2014-10-08T15:26:57.811968Z"
+   checksum="816139c2af8f8394a36d0c1551f8c349"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="12"
+   name="ContrastBrightSaturationStatTable_sa.sa"
+   text-time="2014-10-08T08:18:35.417756Z"
+   committed-date="2014-10-08T15:26:57.811968Z"
+   checksum="83f072cec08236ae235ed6ef46a3b16b"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="16"
+   name="img_alg.c"
+   text-time="2014-10-20T04:29:32.675219Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="83b5c008729718bfe7589ddd021fff1d"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="2"
+   name="ImageCopyNA_sa.sa"
+   text-time="2011-12-01T04:39:02.515625Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="8f866570c0a8362a7cb130f15b1c8441"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="CalBlockGray_sa.sa"
+   text-time="2014-06-11T15:38:11.184253Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="8d9e97e1b15346d27e1426a19a801fd4"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="ImageCopy_sa.sa"
+   text-time="2014-06-11T12:34:18.116558Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="4c91e8281db257f5b222bc6c0a17e737"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="ImageSetNA_sa.sa"
+   text-time="2013-08-21T13:36:53.488333Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="5b9f2be72474de48c59773e3278f8c2c"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="12"
+   name="GrayTransStatTable_sa.sa"
+   text-time="2012-11-07T03:41:31.171875Z"
+   committed-date="2014-10-08T15:26:57.811968Z"
+   checksum="9b3a942983fc58d175b36696fade98dd"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="12"
+   name="ColorTransTable_sa.sa"
+   text-time="2012-11-07T03:41:07.937500Z"
+   committed-date="2014-10-08T15:26:57.811968Z"
+   checksum="f9577a5e7232e3225ba6cb1f03248321"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="12"
+   name="ContrastBrightSaturationTable_sa.sa"
+   text-time="2014-10-08T07:44:16.209976Z"
+   committed-date="2014-10-08T15:26:57.811968Z"
+   checksum="a0f6722e0ad1a4be3fa79762a46c2ab3"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="12"
+   name="GrayTransTable_sa.sa"
+   text-time="2014-10-06T14:42:05.228343Z"
+   committed-date="2014-10-08T15:26:57.811968Z"
+   checksum="943b482ba67f763b004cd00ba653312d"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="jpeg_alg.c"
+   text-time="2013-10-21T04:14:23.359365Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="f00b1f0faf3b3037e06f00587076e953"
+   last-author="gzz"
+   kind="file"/>
+</wc-entries>

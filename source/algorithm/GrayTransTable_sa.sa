@@ -1,0 +1,65 @@
+ .sect "L3_PROGRAM"
+ 
+ .global _GrayTransTable_sa
+
+_GrayTransTable_sa: .cproc  pOutBuf, pInBuf, DstStride, SrcStride, Width, Height, LUTable 
+  .reg  IN_32:IN_10, OUT_32:OUT_10, loop_i, loop_j, IN_Stride, OUT_Stride
+  .reg  Val_Y0, Val_Y1, Val_Y2, Val_Y3
+  .reg  Idx_Y0, Idx_Y1, Idx_Y2, Idx_Y3
+  .reg  LUT_Y0, LUT_Y1, LUT_Y2, LUT_Y3, LUT_Y1Y0, LUT_Y3Y2
+  .reg  OUT_Y1Y0, OUT_Y3Y2 
+  .reg  Val_CBCR, Val_CBCR_c, Width2, Mask, Mask_c
+  .reg  LUTable1, LUTable2, LUTable3
+    
+  SHL     Width,     0x1,      Width2
+  SUB     SrcStride, Width2,   IN_Stride  
+  SUB     DstStride, Width2,   OUT_Stride  
+  SUB     Height,    0x1,      loop_j
+  SHR     Width,     0x2,      Width
+  MVKL    0x80,      Val_CBCR
+  MVKLH   0x80,      Val_CBCR
+  MV      Val_CBCR,  Val_CBCR_c
+  MVK     0xff,      Mask  
+  MVK     0xff,      Mask_c
+  MV      LUTable,   LUTable1
+  MV      LUTable,   LUTable2
+  MV      LUTable,   LUTable3
+
+GrayTTLoop1:
+  SUB     Width,  0x1,      loop_i   
+
+GrayTTLoop0: .trip   4
+  LDNDW    *pInBuf++, IN_32:IN_10
+  SHR     IN_10,     0x8,   Val_Y0 
+  SHR     IN_10,     0x18,  Val_Y1
+  SHR     IN_32,     0x8,   Val_Y2 
+  SHR     IN_32,     0x18,  Val_Y3 
+
+  AND     Val_Y0,    Mask,    Idx_Y0
+  AND     Val_Y1,    Mask,    Idx_Y1
+  AND     Val_Y2,    Mask_c,  Idx_Y2
+  AND     Val_Y3,    Mask_c,  Idx_Y3
+   
+  LDBU    *+LUTable[Idx_Y0],   LUT_Y0
+  LDBU    *+LUTable1[Idx_Y1],  LUT_Y1
+  LDBU    *+LUTable2[Idx_Y2],  LUT_Y2
+  LDBU    *+LUTable3[Idx_Y3],  LUT_Y3
+  
+  PACKL4  LUT_Y1,    LUT_Y0,   LUT_Y1Y0  
+  PACKL4  LUT_Y3,    LUT_Y2,   LUT_Y3Y2  
+
+  SHL     LUT_Y1Y0,  0x8,      OUT_Y1Y0            
+  SHL     LUT_Y3Y2,  0x8,      OUT_Y3Y2   
+
+  OR      OUT_Y1Y0,  Val_CBCR,   OUT_10 
+  OR      OUT_Y3Y2,  Val_CBCR_c, OUT_32 
+
+  STNDW    OUT_32:OUT_10,   *pOutBuf++
+  [loop_i]BDEC    GrayTTLoop0,  loop_i  
+
+  ADD     pInBuf, IN_Stride,     pInBuf   
+  ADD     pOutBuf, OUT_Stride,   pOutBuf
+  [loop_j]BDEC    GrayTTLoop1,  loop_j
+
+      
+ .endproc

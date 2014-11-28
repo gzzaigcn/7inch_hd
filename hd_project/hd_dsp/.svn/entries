@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="7"
+   name=""
+   committed-date="2014-09-03T15:45:10.093210Z"
+   url="svn://192.168.1.217/hd_project/hd_project/hd_dsp"
+   last-author="gzz"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="8"/>
+<entry
+   name="targetConfigs"
+   kind="dir"/>
+<entry
+   name=".launches"
+   kind="dir"/>
+<entry
+   committed-rev="16"
+   name=".project"
+   text-time="2014-11-10T03:00:33.582204Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="1b7cc0b12e35467bcae3d8fe98a0faa1"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   name="Debug"
+   kind="dir"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   committed-rev="9"
+   name=".cproject"
+   text-time="2014-09-05T08:25:12.121425Z"
+   committed-date="2014-09-09T14:53:35.393587Z"
+   checksum="52b77f94ca8bf436808a7ce8039ff2cf"
+   last-author="gzz"
+   kind="file"
+   revision="9"/>
+<entry
+   name="src"
+   kind="dir"/>
+<entry
+   committed-rev="2"
+   name=".ccsproject"
+   text-time="2014-09-03T07:34:21.015622Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="4a46fa41129b5b7eb55e68409b1e95ab"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   name=".settings"
+   kind="dir"/>
+</wc-entries>

@@ -1,0 +1,608 @@
+/******************************************************************************
+
+   Copyright (C), 2014-,    Du-Health Electron Co.    All rights reserved. 
+
+*******************************************************************************
+ * File Name : ov2710.c
+ * Version : 1.0
+ * Author : gzz
+ * Created : 2014/9/4
+ * Last Modified :
+  Description   : camera ov2710 module
+ * Function List :
+ * Modification History :
+   1.Date : 2014/9/4
+     Author : gzz
+     Modification : Created file
+ 
+******************************************************************************/
+#include "comm_camera.h"
+#include "dm6437_i2c.h"
+#include "debug.h"
+
+
+#define MODULE_NAME "ov2710"
+
+#define reg_list reg_list_a16_d8
+
+    
+#define OV2710_I2C_ADDR  (0x6c>>1)//0x36
+#define OV2710_ID 0x2710
+    
+#define REG_DLY 0xffff
+
+//define Macro for ov2710 power/standby/reset volatage level
+#define OV2710_PWR_ON      1
+#define OV2710_PWR_OFF     0
+#define OV2710_STBY_ON     1
+#define OV2710_STBY_OFF   0
+#define OV2710_RESET_ON   0
+#define OV2710_RESET_OFF  1
+
+
+#if 1
+
+static struct reg_list ov2710_default_regs[] = {
+
+};
+
+
+static struct reg_list ov2710_default_regs_bak[] = {
+
+//slave id = 0x6c
+    {0x3103, 0x03},
+    {0x3008, 0x82}, //reset
+    
+    {REG_DLY,0x05}, //must delay
+    {0x3008,0x42}, //pwdn
+    {REG_DLY,0x05}, //must delay
+    #if 1
+    {0x3017, 0x7f},
+    {0x3018, 0xfc},
+    {0x3706, 0x61},
+    {0x3712, 0x0c},
+    {0x3630, 0x6d},
+    {0x3801, 0xb4},    
+    {0x3621, 0x04},//{0x3621, 0x04},
+    {0x3604, 0x60},
+    {0x3603, 0xa7},
+    {0x3631, 0x26},
+    {0x3600, 0x04},
+    {0x3620, 0x37},
+    {0x3623, 0x00},
+    {0x3702, 0x9e},
+    {0x3703, 0x74},
+    {0x3704, 0x10},
+    {0x370d, 0x0f},
+    {0x3713, 0x8b},
+    {0x3714, 0x74},
+    {0x3710, 0x9e},
+    {0x3801, 0xc4},
+    {0x3605, 0x05},
+    {0x3606, 0x12},
+    {0x302d, 0x90},
+    {0x370b, 0x40},
+    {0x3716, 0x31},
+    {0x380d, 0x74},
+    {0x5181, 0x20},
+    {0x518f, 0x00},
+    {0x4301, 0xff},
+    {0x4303, 0x00},
+    {0x3a00, 0x78},
+    {0x300f, 0x88},
+    {0x3011, 0x28},
+    {0x3a1a, 0x06},
+    {0x3a18, 0x00},
+    {0x3a19, 0x7a},
+    {0x3a13, 0x54},
+    {0x382e, 0x0f},
+    {0x381a, 0x1a},
+        #endif
+        
+    //aec 
+    #if 1
+    {0x3a0f, 0x40},
+    {0x3a10, 0x38},
+    {0x3a1b, 0x48},
+    {0x3a1e, 0x30},
+    {0x3a11, 0x90},
+    {0x3a1f, 0x10},    
+    #else
+
+    {0x3a0f, 0x7e},
+    {0x3a10, 0x30},
+    {0x3a11, 0x70},
+    {0x3a1b, 0x6c},
+    {0x3a1e, 0x60},
+    {0x3a1f, 0x50},
+        
+    #endif
+//    {0x5000, 0x4f},
+//    {0x501f, 0x03},
+
+};
+
+static struct reg_list ov2710_720P_regs[] = {
+    
+    {0x3103, 0x03},
+    {0x3008, 0x82}, //reset
+    {0x3017, 0x7f},
+    {0x3018, 0xfc},//data[0:9] pad output enable
+    {0x3011, 0x08},
+    {0x3010, 0x70},//PLL
+    {0x3621, 0x09}, //Arrat control01	bit[7]: Horizontal binning enable, [6:0]: Reserved
+    {0x3804, 0x05},
+    {0x3805, 0x00}, //HW 1280
+    {0x3806, 0x02},
+    {0x3807, 0xd0},//VH 720
+    {0x3808, 0x05},//;DVP  ;width 1280
+    {0x3809, 0x00},
+    {0x380a, 0x02},//DVP height 720
+    {0x380b, 0xd0},
+    {0x380c, 0x09},//Total horizontal size  2527
+    {0x380d, 0xdf},
+    {0x380e, 0x04},//;Total vertical size  1128
+    {0x380f, 0x68},
+        
+    {0x5000, 0x4f},// ISP control00
+    {0x501f, 0x03}, // RAW
+        
+    {0x3818, 0xc0},
+    {0x3810, 0xc2},//[7:4] Horz offset 12   [3:0]: Vert offset 2
+    
+    {0x5181, 0x02}, //AWB control01
+    {0x5182, 0x04}, //AWB control02
+    {0x5185, 0x22}, //AWB control06 [7:4]: Threshol for unstable to stable change [3:0] threshold for stable to unstable change
+    {0x5197, 0x02},
+    {0x471d, 0x05},
+    {0x370d, 0x06},
+    {0x3503, 0x07},//AEC manual mode control [2] VTS manual 0:auto enable, 1:manual enable,0:auto enable bit[1]: 1:AGC manual, 0:auto, bit[0] 0:auto,1:manual 
+    {0x350b, 0x00},//AGC GAIN
+
+//    {0x503d, 0x80}, //color bar enable
+
+    {0x3a00, 0x78},//AEC control 01 bit[6]: LAEC ON,[5] band function [4]:band low limit mode [2] night mode 
+    {0x3a13, 0x30},//AEC control 13 [5] Pregain enable [4:0]:Pre-gain value 
+    {0x3a18, 0x00},//AEC gain ceiling
+    {0x3a19, 0x10},
+
+//    {0x3a08, 0x12},//B50_STEP 4800
+//    {0x3a09, 0xc0},
+//    {0x3a0a, 0x0f},//B60_step 4000
+//    {0x3a0b, 0xa0},
+//    {0x3a0d, 0x08},//60Hz max bands in one frame 
+//    {0x3a0e, 0x06},//50Hz max bands in one frame 
+
+    {0x3500, 0x00},//long channel exposure output
+    {0x3501, 0x00},
+    {0x3502, 0x80},
+    {0x350a, 0x00},
+    {0x350b, 0x00},
+    {0x350c, 0x07},
+    {0x350d, 0xd0},
+    {0x3503, 0x00},
+
+    {0x3a0f, 0x3c},
+    {0x3a10, 0x32},
+    {0x3a1b, 0x40},
+    {0x3a1e, 0x2e},
+        
+    {0x3a02, 0x00},//60Hz max exp bit[3:0]: max expo[19:16]  
+    {0x3a03, 0x7d},
+    {0x3a04, 0x00},
+    {0x3a14, 0x00},//50Hz max exp
+    {0x3a15, 0x7d},
+    {0x3a16, 0x00},
+    {0x3a00, 0x78},//Fix AEC control01  
+        
+    {0x3a08, 0x90},//50Hz banding  
+    {0x3a09, 0x60},
+    {0x3a0a, 0x07},//60Hz banding  
+    {0x3a0b, 0xd0},
+    {0x3a0d, 0x10},//60Hz max bands in one frame 
+    {0x3a0e, 0x0d},//50Hz max bands in one frame 
+
+    {0x3a0f, 0x7e},
+    {0x3a10, 0x30},
+    {0x3a11, 0x70},
+    {0x3a1b, 0x6c},
+    {0x3a1e, 0x60},
+    {0x3a1f, 0x50},
+
+};
+
+static struct reg_list ov2710_720P_regs_bak[] = {
+
+    //window
+   {0x381c, 0x10},
+   {0x381d, 0xb8}, 
+   {0x381e, 0x02},
+   {0x381f, 0xdc},
+   {0x3820, 0x0a},
+   {0x3821, 0x29},
+   {0x3800, 0x01},
+   {0x3801, 0xc4},// horizontal start
+   {0x3802, 0x00},
+   {0x3803, 0x0a},//vertical start
+    #if 1
+   {0x3804, 0x05},
+   {0x3805, 0x00},//width = 0x500,1280
+   {0x3806, 0x02},
+   {0x3807, 0xd0},//height = 0x2d0,720
+   {0x3808, 0x05},
+   {0x3809, 0x00},
+   {0x380a, 0x02},
+   {0x380b, 0xd0},
+   {0x380c, 0x07},//1792
+   {0x380d, 0x00},
+   {0x380e, 0x02},//760
+    {0x380f, 0xe8},
+    #else
+    {0x3621, 0x09}, //Arrat control01	bit[7]: Horizontal binning enable, [6:0]: Reserved
+    
+    {0x3804, 0x05},
+    {0x3805, 0x00}, //HW 1280
+    {0x3806, 0x02},
+    {0x3807, 0xd0},//VH 720
+    {0x3808, 0x05},//;DVP  ;width 1280
+    {0x3809, 0x00},
+    {0x380a, 0x02},//DVP height 720
+    {0x380b, 0xd0},
+    {0x380c, 0x09},//Total horizontal size  2527
+    {0x380d, 0xdf},
+    {0x380e, 0x04},//;Total vertical size  1128
+    {0x380f, 0x68},
+    #endif
+    
+    {0x3810, 0x10},
+    {0x3811, 0x06},
+
+   //timing,pclk
+   {0x3818, 0x80},
+   {0x3621, 0x04},
+   {0x3622, 0x08},
+   {0x370d, 0x0f},  //;Analog control bit[6] vertical binning enable
+   {0x401c, 0x08},
+   {0x3012, 0x01},
+   {0x300f, 0x08}, //0x300f[7:6]: if  0 use 1
+   {0x3011, 10}, //PLL = 40±¶,
+   {0x3010, 0x10}, //PCLK config.80Mhz,24*40/1.5/2/1/4
+
+   {REG_DLY, 10},//delay 5ms
+
+   //banding
+   #if 1
+   {0x3a0a, 0x09},
+   {0x3a0b, 0x4c},
+   {0x3a08, 0x07},
+   {0x3a09, 0xc0},
+   {0x3a0d, 0x04},
+   {0x3a0e, 0x05},
+    #else
+    {0x3a08, 0x90},//50Hz banding  
+    {0x3a09, 0x60},
+    {0x3a0a, 0x07},//60Hz banding  
+    {0x3a0b, 0xd0},
+    {0x3a0d, 0x10},//60Hz max bands in one frame 
+    {0x3a0e, 0x0d},//50Hz max bands in one frame     
+    #endif
+//    {0x501f, 0x03},
+//    {0x4709, 5},
+
+   {0x503d, 0x80}, //color bar enable
+  /*signal polarity: HSYNC+VSYNC: HIGH Polarity*/
+   {0x3008, 0x02}// Normal mode
+    
+};
+#endif
+
+/*Ov2710 GPIO output disable*/
+static struct reg_list  ov2710_io_disable_regs[] = {
+
+    {0x3017, 0x00},
+    {0x3018, 0x00}
+        
+  //{REG_TERM,VAL_TERM},
+};
+
+/*GPIO output enable*/
+static struct reg_list  ov2710_io_enable_regs[] = {
+
+    {0x3017, 0x7f},
+    {0x3018, 0xfc}
+  //{REG_TERM,VAL_TERM},
+};
+
+
+
+static void ov2710_read(Uint16 reg_addr, Uint8 *value)
+{
+    Int16 ret;
+    Uint8 data[2];
+    
+    data[0] = (reg_addr & 0xff00) >> 8;//addr MSB first
+    data[1] = reg_addr & 0x00ff; 
+
+    ret = EVMDM6437_I2C_write(OV2710_I2C_ADDR, data, 2); //write reg addr
+    if(ret < 0)
+    {
+        DEV_ERR("failed to write ov2710");
+        return;
+    }
+
+    _waitusec(1000);
+    ret = EVMDM6437_I2C_read(OV2710_I2C_ADDR, value,1); //read 1Byte data
+    if(ret < 0)
+    {
+        DEV_ERR("failed to read ov2710");
+        return;
+    }
+    _waitusec(100);
+
+    
+}
+
+static void ov2710_write(Uint16 reg_addr, Uint8 value)
+{
+    Int16 ret;
+    Uint8 data[3];
+
+    data[0] = (reg_addr&0xff00) >> 8;//addr MSB first 
+    data[1] = reg_addr & 0x00ff; 
+    data[2] = value;
+    
+    ret = EVMDM6437_I2C_write(OV2710_I2C_ADDR, data, 3);
+    if(ret < 0)
+    {
+        DEV_ERR("failed to write ov2710");
+    }    
+}
+
+static void ov2710_write_array(struct reg_list *regs, Uint32 array_size)
+{
+    
+    while(array_size--)
+    {
+        if(regs->addr == REG_DLY)
+        {
+            _waitmsec(regs->data); //delay ms
+        }
+        else
+        {
+            ov2710_write( regs->addr, regs->data);
+        }
+        regs++;
+    }
+    
+}
+
+#if 0
+static void ov2710_write_continuous(Uint16 base_addr, char *vals, Int32 size)
+{
+    Uint8 data[2+32];
+    Uint8 once_len = 0;
+    Uint32 i;
+    
+    while(size < 0)
+    {
+        once_len = size > 32 ? 32 : size;
+        
+        data[0] = (base_addr&0xff00) >> 8;//addr MSB first 
+        data[1] = base_addr & 0x00ff;        
+
+        for(i =2; i < once_len+2; i++)
+            data[i] = *vals++;
+
+        EVMDM6437_I2C_write(OV2710_I2C_ADDR, data, 2+once_len);//write 2(reg_addr)+once_len(datas)
+
+        size -= once_len;
+        base_addr += once_len;//offset process
+        
+    }
+        
+}
+#endif
+
+/*****************************************************************************
+ * Prototype : ov2710_set_sw_stby
+ * description  : set ov2710 software standby 
+ * Input : None
+ * Output : None
+ * Return Value : static
+ * Calls : 
+ * Called By  : 
+ 
+ * Modification History :
+ * 1.Date : 2014/9/4
+ *   Author : gzz
+ *   Modification : Created function
+ 
+*****************************************************************************/
+static void ov2710_set_sw_stby(Uint8 on_off)
+{
+    Uint8 val;
+    ov2710_read(0x3008, &val);
+
+    if(on_off == OV2710_STBY_ON)
+    {
+        ov2710_write(0x3008, val | 0x40);//enable software sleep power down
+    }
+    else
+    {
+        ov2710_write(0x3008, val & 0xbf);//normal work
+    }
+    
+}
+
+/*****************************************************************************
+ * Prototype : ov2710_detect
+ * description  : detect ov2710 on i2c 
+ * Input : None
+ * Output : None
+ * Return Value : static
+ * Calls : 
+ * Called By  : 
+ 
+ * Modification History :
+ * 1.Date : 2014/9/4
+ *   Author : gzz
+ *   Modification : Created function
+ 
+*****************************************************************************/
+static Int8 ov2710_detect()
+{
+    Uint8 ret_val;
+
+    ov2710_read(0x300A, &ret_val);
+    
+    if(ret_val != 0x27)
+    {
+        return -1;
+    }
+    
+    ov2710_read(0x300B, &ret_val);
+    if(ret_val != 0x10)
+    {
+        return -1;
+    }   
+
+     return 1;
+}
+
+
+
+/*****************************************************************************
+ * Prototype : ccamera_ov2710_ctrl_power
+ * description  : ov2710 control power¡¢powdn¡¢Reset
+ * Input :   Uint8 ctrl_id  
+ * Output : None
+ * Return Value : static
+ * Calls : 
+ * Called By  : 
+ 
+ * Modification History :
+ * 1.Date : 2014/9/4
+ *   Author : gzz
+ *   Modification : Created function
+ 
+*****************************************************************************/
+Int8 camera_ov2710_ctrl_power(Uint8 ctrl_id)
+{
+    
+    switch(ctrl_id)
+    {
+        
+        case CAMERA_CTRL_PWR_ON:
+            {
+                
+                /*setup camera control gpio to output*/
+                EVMDM6437_GPIO_setDir(CAMERA_GPIO_POWER, GPIO_OUT);
+                EVMDM6437_GPIO_setDir(CAMERA_GPIO_STBY, GPIO_OUT);
+                EVMDM6437_GPIO_setDir(CAMERA_GPIO_RESET,  GPIO_OUT);
+                
+                /*standby on*/
+                EVMDM6437_GPIO_setOutput(CAMERA_GPIO_STBY, OV2710_STBY_ON);                
+                
+                /*power on*/
+                EVMDM6437_GPIO_setOutput(CAMERA_GPIO_POWER, OV2710_PWR_ON);
+                _waitusec(10000);
+
+               /*standby off*/
+                EVMDM6437_GPIO_setOutput(CAMERA_GPIO_STBY, OV2710_STBY_OFF);
+                /*reset on*/
+                EVMDM6437_GPIO_setOutput(CAMERA_GPIO_RESET, OV2710_RESET_ON);
+                _waitusec(20000);
+                /*reset off*/
+                EVMDM6437_GPIO_setOutput(CAMERA_GPIO_RESET, OV2710_RESET_OFF);
+                _waitusec(20000);
+                
+            }
+            break;
+            
+        case CAMERA_CTRL_PWR_OFF :
+            {
+                
+                /*power off*/
+                EVMDM6437_GPIO_setOutput(CAMERA_GPIO_POWER, OV2710_PWR_OFF);
+                _waitusec(10000);
+        
+               /*standby off*/
+                EVMDM6437_GPIO_setOutput(CAMERA_GPIO_STBY, OV2710_STBY_OFF);
+                _waitusec(10000);
+                /*reset on*/
+                EVMDM6437_GPIO_setOutput(CAMERA_GPIO_RESET, OV2710_RESET_ON);
+
+                /*setup camera control gpio to input*/
+                EVMDM6437_GPIO_setDir(CAMERA_GPIO_POWER, GPIO_IN);
+                EVMDM6437_GPIO_setDir(CAMERA_GPIO_STBY,    GPIO_IN);
+                EVMDM6437_GPIO_setDir(CAMERA_GPIO_RESET,  GPIO_IN);
+                
+            }
+            break;
+            
+        case CAMERA_CTRL_STBY_ON :
+            {
+
+                /*software standby on*/
+                ov2710_set_sw_stby(OV2710_STBY_ON);
+                ov2710_write_array(ov2710_io_disable_regs, ARRAY_SIZE(ov2710_io_disable_regs));
+                _waitusec(10000);
+
+                /*hardware standby on*/
+                EVMDM6437_GPIO_setOutput(CAMERA_GPIO_STBY, OV2710_STBY_ON);
+                
+            }
+            break;
+            
+        case CAMERA_CTRL_STBY_OFF :
+            {
+                /*hardware standby off*/
+                EVMDM6437_GPIO_setOutput(CAMERA_GPIO_STBY, OV2710_STBY_OFF);
+                _waitusec(10000);
+
+                /*software standby off*/
+                ov2710_set_sw_stby(OV2710_STBY_OFF);
+                _waitusec(10000);
+                ov2710_write_array(ov2710_io_enable_regs, ARRAY_SIZE(ov2710_io_enable_regs));
+            }
+            break;
+
+        default:
+            {
+                return -1;
+            }
+    }
+
+    return 1;
+    
+}
+
+Int8 camera_ov2710_init()
+{
+    
+    Int8 ret;
+
+   ret = ov2710_detect();
+    if(ret < 0)
+    {
+        DEV_ERR("failed to detect ov2710");
+        return -1;
+    }
+    _waitusec(100);
+    DEV_DBG("succeed to detect ov2710 on board");
+
+    /*init ov2710 camera by 720P@60fps*/
+    ov2710_write_array(ov2710_default_regs, ARRAY_SIZE(ov2710_default_regs));
+    ov2710_write_array(ov2710_720P_regs, ARRAY_SIZE(ov2710_720P_regs));
+/*
+    Uint8 data;
+    while(1){
+    ov2710_read(0x3018, &data);
+    DEV_DBG("0x%x", data);
+    }
+    */
+    return 1;
+}
+
+
+

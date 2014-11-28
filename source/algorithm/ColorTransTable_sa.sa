@@ -1,0 +1,89 @@
+ .sect "L3_PROGRAM"
+ 
+ .global _ColorTransTable_sa
+
+_ColorTransTable_sa: .cproc  pOutBuf, pInBuf, DstStride, SrcStride, Width, Height, LUTableY, LUTableCb, LUTableCr 
+  .reg  IN_32:IN_10, OUT_32:OUT_10, loop_i, loop_j, IN_Stride, OUT_Stride
+  .reg  Val_Y0, Val_Y1, Val_Y2, Val_Y3
+  .reg  Idx_Y0, Idx_Y1, Idx_Y2, Idx_Y3
+  .reg  LUT_Y0, LUT_Y1, LUT_Y2, LUT_Y3, LUT_Y0Cb0, LUT_Y1Cr0, LUT_Y2Cb1, LUT_Y3Cr1
+  .reg  LUT_Cb0, LUT_Cr0, LUT_Cb1, LUT_Cr1
+  .reg  LUT_Cb0c, LUT_Cr0c, LUT_Cb1c, LUT_Cr1c
+  .reg  OUT_Y1Y0, OUT_Y3Y2 
+  .reg  Val_CBCR, Val_CBCR_c, Width2, Mask, Mask_c
+  .reg  LUTableY1, LUTableY2, LUTableY3
+  .reg  LUTableCb1, LUTableCr1
+  .reg  Cmp0, Cmp1, Cmp2, Cmp3 
+      
+  SHL     Width,     0x1,      Width2
+  SUB     SrcStride, Width2,   IN_Stride  
+  SUB     DstStride, Width2,   OUT_Stride  
+  SUB     Height,    0x1,      loop_j
+  SHR     Width,     0x2,      Width
+  MVK     0xff,      Mask  
+  MVK     0xff,      Mask_c
+  MV      LUTableY,  LUTableY1
+  MV      LUTableY,  LUTableY2
+  MV      LUTableY,  LUTableY3
+  MV      LUTableCb, LUTableCb1
+  MV      LUTableCr, LUTableCr1
+
+ColorTTLoop1:
+  SUB     Width,  0x1,      loop_i   
+
+ColorTTLoop0: .trip   4
+  LDNDW    *pInBuf++, IN_32:IN_10
+  SHR     IN_10,     0x8,   Val_Y0 
+  SHR     IN_10,     0x18,  Val_Y1
+  SHR     IN_32,     0x8,   Val_Y2 
+  SHR     IN_32,     0x18,  Val_Y3 
+  
+  AND     Val_Y0,    Mask,    Idx_Y0
+  AND     Val_Y1,    Mask,    Idx_Y1
+  AND     Val_Y2,    Mask_c,  Idx_Y2
+  AND     Val_Y3,    Mask_c,  Idx_Y3
+   
+  LDBU    *+LUTableY[Idx_Y0],   LUT_Y0
+  LDBU    *+LUTableY1[Idx_Y1],  LUT_Y1
+  LDBU    *+LUTableY2[Idx_Y2],  LUT_Y2
+  LDBU    *+LUTableY3[Idx_Y3],  LUT_Y3
+  
+  LDBU    *+LUTableCb[Idx_Y0],   LUT_Cb0
+  LDBU    *+LUTableCr[Idx_Y0],   LUT_Cr0
+  LDBU    *+LUTableCb[Idx_Y1],   LUT_Cb0c
+  LDBU    *+LUTableCr[Idx_Y1],   LUT_Cr0c
+  LDBU    *+LUTableCb1[Idx_Y2],  LUT_Cb1
+  LDBU    *+LUTableCr1[Idx_Y2],  LUT_Cr1
+  LDBU    *+LUTableCb1[Idx_Y3],  LUT_Cb1c
+  LDBU    *+LUTableCr1[Idx_Y3],  LUT_Cr1c
+
+  CMPEQ   LUT_Y0,    Mask,       Cmp0  
+  CMPEQ   LUT_Y0,    0x0,        Cmp1 
+  CMPEQ   LUT_Y2,    Mask,       Cmp2  
+  CMPEQ   LUT_Y2,    0x0,        Cmp3   
+
+  PACKL4  LUT_Y0,    LUT_Cb0,    LUT_Y0Cb0
+  PACKL4  LUT_Y1,    LUT_Cr0,    LUT_Y1Cr0
+  PACKL4  LUT_Y2,    LUT_Cb1,    LUT_Y2Cb1
+  PACKL4  LUT_Y3,    LUT_Cr1,    LUT_Y3Cr1
+  [Cmp0]PACKL4  LUT_Y0,    LUT_Cb0c,    LUT_Y0Cb0
+  [Cmp0]PACKL4  LUT_Y1,    LUT_Cr0c,    LUT_Y1Cr0
+  [Cmp1]PACKL4  LUT_Y0,    LUT_Cb0c,    LUT_Y0Cb0
+  [Cmp1]PACKL4  LUT_Y1,    LUT_Cr0c,    LUT_Y1Cr0
+  [Cmp2]PACKL4  LUT_Y2,    LUT_Cb1c,    LUT_Y2Cb1
+  [Cmp2]PACKL4  LUT_Y3,    LUT_Cr1c,    LUT_Y3Cr1
+  [Cmp3]PACKL4  LUT_Y2,    LUT_Cb1c,    LUT_Y2Cb1
+  [Cmp3]PACKL4  LUT_Y3,    LUT_Cr1c,    LUT_Y3Cr1
+
+  PACKL4  LUT_Y1Cr0, LUT_Y0Cb0,  OUT_10
+  PACKL4  LUT_Y3Cr1, LUT_Y2Cb1,  OUT_32
+
+  STNDW    OUT_32:OUT_10,   *pOutBuf++
+  [loop_i]BDEC    ColorTTLoop0,  loop_i  
+
+  ADD     pInBuf, IN_Stride,     pInBuf   
+  ADD     pOutBuf, OUT_Stride,   pOutBuf
+  [loop_j]BDEC    ColorTTLoop1,  loop_j
+
+      
+ .endproc

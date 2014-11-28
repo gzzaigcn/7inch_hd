@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="7"
+   name=""
+   committed-date="2014-09-03T15:45:10.093210Z"
+   url="svn://192.168.1.217/hd_project/hd_project/hd_dsp/.settings"
+   last-author="gzz"
+   kind="dir"
+   uuid="d83e9d83-d292-4926-94a1-201e830d597b"
+   revision="8"/>
+<entry
+   committed-rev="16"
+   name="org.eclipse.core.resources.prefs"
+   text-time="2014-11-10T02:58:52.969449Z"
+   committed-date="2014-11-10T08:14:54.480337Z"
+   checksum="fd4be62bc27a793a13f7d80e79a22f69"
+   last-author="gzz"
+   kind="file"
+   revision="16"/>
+<entry
+   committed-rev="2"
+   name="org.eclipse.cdt.codan.core.prefs"
+   text-time="2014-09-03T07:12:32.791505Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="3498df6de0cf30698c3ee50e39db6344"
+   last-author="gzz"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="org.eclipse.cdt.debug.core.prefs"
+   text-time="2014-09-03T07:12:33.581506Z"
+   committed-date="2014-09-03T08:15:57.279546Z"
+   checksum="c05efbb71b2e1b1183237988fc60331d"
+   last-author="gzz"
+   kind="file"/>
+</wc-entries>
